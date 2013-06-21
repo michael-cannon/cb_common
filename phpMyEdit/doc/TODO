@@ -1,0 +1,126 @@
+phpMyEdit TODO list
+-------------------
+
+So release 5.2 is out. A few new features was planed for this release, the most
+important is CSS style policy. They are not implemented now, thus they are not
+in 5.2. Release went out, because already fixed bug reports was submitted on
+SF.net.
+
+Thus for next 5.3 release is beside another bug fixing also metioned CSS style
+policy and DocBook documentation planed as a main priorities.
+
+Stay tuned. 5.3 to come.
+
+			-- Nepto [18/11/2002]
+
+-------------------
+
+This was my private list of wanted features with notes of actual bugs in
+phpMyEdit. I never suppose, that I will be maintainer of this wonderful
+project, so this list of wanted features becomes simple TODO list for
+phpMyEdit.
+			-- Nepto [8/8/2002]
+
+-------------------
+
+* array compatible "sort_field" option to have possibility of default sorting
+  according to more than one table column
+* fix sorting problem when using table lookup with divs (separator)
+* if picture/text links enabled, use texts for filter/search/hide buttons
+- create URL links also in record view/delete
+
+- fix this: `filters' option works fine, but when there is column with the same
+  name in main table and also in join table, it must be prefixed by table alias
+  (TableX.); prefixation with table name of course does not work; maybe note
+  should be added into this option to use aliases, because this is difficult to
+  fix without CPU expensive SQL parser
+- add original variables which will persist whole session support
+* reimplement actionStyle to have possibility spefify where you want navigation
+  buttons (up, down or both) and/or image/text action links
+* implement repeating save in change operation (after repeating save is change
+  record displayed again instead of table listing)
+  - "Apply" function works fine
+- extend patch from Shaun Johnston and add divs['-1'] to implement prefix and
+  divs[$n + 1] to implement postfix
+
+
+* what is difference between default_sort_columns and sort_field
+  - not important now, default_sort_columns remove and sort_field brings amount
+    of usable features, check doc/ChangeLog file for more information
+* after save of records, fields are incorrectly displayed (in example
+  Description field in Authors is showed)
+  - nasty bug created in 4.x, fixed and works fine
+* URLtarget to specify URL target
+
+* links and buttons - booth used for records manipulating is not good
+  idea?
+  - good idea, implemented, use `navigation' option key for this
+* when using images or links instead of buttons, change and delete links
+  are constructed with English words (not national):
+	http://example.com/authors.php?sfn=0&fl=0&fm=0&operation=Change&rec=1
+	http://example.com/authors.php?sfn=0&fl=0&fm=0&operation=Delete&rec=1
+  Than it is impossible to change or delete record via links. Other
+  functions such as view and copy works well.
+  - fixed, works fine
+
+* images should be transparent, and not GIFs but PNGs
++ path prefix specification to graphic image styles
++ default sort columns are cool, but is there a way to specify
+  descending ordering? In this case empty strings goes first and
+  I want them at the end of list
+
+* value of 0 in number of records to display on the screen will cause
+  "Division by zero" error; so this should have the same functionality
+  as -1 (display all records)
+  - fixed
+
+* according to language uand settings use htmlentities()
+  or htmlspecialchars()
+  - problematic htmlentities() is not used anymore
+
++ abbility to take more than one column from external table when using
+  optional description field;
+  Example:
+  I have a table of authors with surname and firstname fields.
+  I have also table of articles with author_id field.
+  I want during adding new article to select from authors, but not only
+  by surname, but by both, surname and firstname.
+  Posible solutions:
+  1. specify one field '@concat(surname, ', ', firstname)
+  2. specify by array
+  Although this seems to be difficult to implement.
+
+- ability to resize set of values from external table about value 'not set'
+  Example:
+  I have table of organizations.
+  I have table of users with organization_id field.
+  Every user may be in organization, but he/she mustn't.
+  So I wanted to select from organization table names or select nothing and
+  than organization_id will be 0.
+
+- security hole with View (remove View ability and use operation=View, it will
+  also give you a view ability)
+- the same with Change (after saving, records will be surprisingly added)
+
+
+
+- allow to set CSS's clases for <td> (odd and even), <th>, <table>, <a>, etc
+- multiple primary key support
+- M:N joins support and similary sets support 
+- allow to select any combination of description columns when makes join; eval()
+  should be used for this purpose to allow also some simple data transforming
+* $inc sets to 0 means unlimited
+
+* implementation of view action - requires change of $labels, but it is
+  neccessary
+* column ability to be showed and read-only in add/edit screen
+  (example of use: description column of property/config table)
+- fix page number after search (that means: I'm on page 4/50, I search for
+  some records and result is a few in example 5 records, all of these 5 records
+  are able to fill 1 page, but I will be after search on page 4/1 - that's
+  really strange)
++ fast moving between list pages (pulldown menu with page numbers)
+* $where variable in options to specify where clausule for working only
+  with subset of data
++ data removing protection - delete will only mark record as deleted
+

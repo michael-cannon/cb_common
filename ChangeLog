@@ -1,0 +1,943 @@
+2002-11-25 23:02  comprock
+
+	* class.CB_Block_Admin.php (1.21): Fix Call-time pass by refrence
+	errors
+
+2002-11-23 17:45  comprock
+
+	* phpws_modules.php (1.2): New version
+
+2002-11-22 22:30  comprock
+
+	* ChangeLog (1.21), phpMyEdit/phpMyEdit.class.php (1.11): Update
+	ChangeLog
+
+2002-11-22 19:25  comprock
+
+	* phpMyEdit/: phpMyEdit.class.php (1.10), phpMyEditSetup.php (1.4):
+	Option fixes Warning and Notice fixes
+
+2002-11-22 10:26  comprock
+
+	* ChangeLog (1.20), debug_msg.php (1.33): Update ChangeLog
+
+2002-11-22 09:06  comprock
+
+	* ChangeLog (1.19): Update ChangeLog
+
+2002-11-19 20:44  comprock
+
+	* ChangeLog (1.18): Update ChangeLog
+
+2002-11-19 20:09  comprock
+
+	* class.CB_Block_Admin.php (1.20): Fix ALTER TABLE handling
+
+2002-11-17 20:24  comprock
+
+	* ChangeLog (1.17, rel_1-19-0): Update ChangeLog
+
+2002-11-16 20:31  comprock
+
+	* class.CB_Block_Admin.php (1.19, rel_1-19-0): File header fix
+
+2002-11-16 19:19  comprock
+
+	* class.CB_Block_Admin.php (1.18), beautify/beautify_php.class.inc
+	(1.3, rel_1-19-0), beautify/beautify_php.php (1.3, rel_1-19-0):
+	Verbiage fixes File write beautified code, beware of class
+	duplication Directory handling fixes Menu adding and removal fixes
+
+2002-11-16 14:43  comprock
+
+	* README (1.28, rel_1-19-0), cb_database.php (1.34, rel_1-19-0),
+	class.CB_Block_Admin.php (1.17): Fix sql_result2array() Add
+	menu_remove() Add menu_post()
+
+2002-11-16 14:09  comprock
+
+	* cb_dir_file.php (1.30, rel_1-19-0): Fix virtual root to work with
+	directories
+
+2002-11-16 12:47  comprock
+
+	* ChangeLog (1.16, rel_1-18-0): Update ChangeLog
+
+2002-11-16 12:10  comprock
+
+	* ChangeLog (1.15): Update ChangeLog
+
+2002-11-16 12:07  comprock
+
+	* class.CB_Block_Admin.php (1.16), phpws_modules.php (1.1,
+	rel_1-19-0) (utags: rel_1-18-0): Use phpMyEdit to handle module
+	block administration routines Add phpMyEdit configuration file for
+	modules table
+
+2002-11-15 14:03  comprock
+
+	* INSTALL (1.26, rel_1-19-0, rel_1-18-0), LICENSE (1.24,
+	rel_1-19-0, rel_1-18-0), README (1.27, rel_1-18-0), TODO (1.25,
+	rel_1-19-0, rel_1-18-0), cb_array.php (1.30, rel_1-19-0,
+	rel_1-18-0), cb_common.php (1.32, rel_1-19-0, rel_1-18-0),
+	cb_common_alt.php (1.31, rel_1-19-0, rel_1-18-0), cb_database.php
+	(1.33, rel_1-18-0), cb_date_time.php (1.31, rel_1-19-0,
+	rel_1-18-0), cb_db_table_to_class.php (1.10, rel_1-19-0,
+	rel_1-18-0), cb_dir_file.php (1.29, rel_1-18-0), cb_email.php
+	(1.27, rel_1-19-0, rel_1-18-0), cb_html.php (1.31, rel_1-19-0,
+	rel_1-18-0), cb_javascript.php (1.20, rel_1-19-0, rel_1-18-0),
+	cb_math.php (1.27, rel_1-19-0, rel_1-18-0), cb_string.php (1.33,
+	rel_1-19-0, rel_1-18-0), cb_validation.php (1.19, rel_1-19-0,
+	rel_1-18-0), class.CB_Block_Admin.php (1.15), class.DB_Pager.php
+	(1.5, rel_1-19-0, rel_1-18-0), debug_msg.php (1.32, rel_1-19-0,
+	rel_1-18-0), index.php (1.19, rel_1-19-0, rel_1-18-0), phpinfo.php
+	(1.27, rel_1-19-0, rel_1-18-0): IC to SF updates
+
+2002-11-09 15:43  comprock
+
+	* phpMyEdit/images/: pme-change.png (1.4), pme-copy.png (1.4),
+	pme-delete.png (1.4), pme-view.png (1.4) (utags: rel_1-18-0,
+	rel_1-19-0): Reload pics
+
+2002-11-09 15:43  comprock
+
+	* phpMyEdit/images/: pme-change.png (1.3), pme-copy.png (1.3),
+	pme-delete.png (1.3), pme-view.png (1.3): Attempt to fix images
+
+2002-11-09 14:35  comprock
+
+	* phpMyEdit/: .cvsignore (1.1), Makefile (1.1), phpMyEditSetup.php
+	(1.3), timer.class (1.2), comprehensive/.cvsignore (1.1),
+	comprehensive/comprehensive.php (1.1),
+	comprehensive/comprehensive.sql (1.1), doc/.cvsignore (1.1),
+	doc/AUTHORS (1.2), doc/ChangeLog (1.3), doc/README (1.3), doc/TODO
+	(1.2), doc/sgml/configuration.fields.sgml (1.1),
+	doc/sgml/configuration.general.sgml (1.1),
+	doc/sgml/configuration.sgml (1.1), doc/sgml/defs.sgml (1.1),
+	doc/sgml/extensions.sgml (1.1), doc/sgml/installation.sgml (1.1),
+	doc/sgml/introduction.sgml (1.1), doc/sgml/other-information.sgml
+	(1.1), doc/sgml/phpMyEdit.sgml (1.1),
+	doc/sgml/images/id-selection.gif (1.1), doc/sgml/images/logon.gif
+	(1.1), doc/sgml/images/result-script.gif (1.1),
+	doc/sgml/images/table-selection.gif (1.1),
+	extensions/phpMyEdit-report.class.php (1.1),
+	extensions/phpMyEdit-slide.class.php (1.1),
+	images/gif/pme-change.gif (1.1), images/gif/pme-copy.gif (1.1),
+	images/gif/pme-delete.gif (1.1), images/gif/pme-view.gif (1.1),
+	images/ori/pme-change.gif (1.1), images/ori/pme-copy.gif (1.1),
+	images/ori/pme-delete.gif (1.1), images/ori/pme-view.gif (1.1),
+	lang/PME.lang.DE.inc (1.3), lang/PME.lang.EN-US.inc (1.3),
+	lang/PME.lang.EN.inc (1.3), lang/PME.lang.FR.inc (1.3),
+	lang/PME.lang.IT.inc (1.3), lang/PME.lang.NL.inc (1.3),
+	lang/PME.lang.PG.inc (1.3), lang/PME.lang.PL.inc (1.2),
+	lang/PME.lang.SK.inc (1.3), lang/PME.lang.SP.inc (1.3) (utags:
+	rel_1-18-0, rel_1-19-0): phpMyEdit 5.0 to 5.1 update
+
+2002-11-09 14:28  comprock
+
+	* phpMyEdit/phpMyEdit.class.php (1.9, rel_1-19-0, rel_1-18-0): Fix
+	$fdd value/description pairing
+
+2002-11-09 13:37  comprock
+
+	* phpMyEdit/phpMyEdit.class.php (1.8): Platon 1.26 update Combine
+	with CB changes
+
+2002-11-09 07:51  comprock
+
+	* cb_dir_file.php (1.28): Add virtual_root()
+
+2002-11-08 22:26  comprock
+
+	* ChangeLog (1.14): Update ChangeLog
+
+2002-11-08 10:54  comprock
+
+	* INSTALL (1.25), LICENSE (1.23), README (1.26), TODO (1.24),
+	cb_array.php (1.29), cb_common.php (1.31), cb_common_alt.php
+	(1.30), cb_database.php (1.32), cb_date_time.php (1.30),
+	cb_db_table_to_class.php (1.9), cb_dir_file.php (1.27),
+	cb_email.php (1.26), cb_html.php (1.30), cb_javascript.php (1.19),
+	cb_math.php (1.26), cb_string.php (1.32), class.CB_Block_Admin.php
+	(1.14), index.php (1.18), phpinfo.php (1.26): IC to SF
+
+2002-11-06 07:36  comprock
+
+	* class.DB_Pager.php (1.4): Add missing variable Rename internal
+	default variables
+
+2002-11-04 15:30  comprock
+
+	* debug_msg.php (1.31): Enable $show_globals for php_variables()
+
+2002-11-04 14:46  comprock
+
+	* cb_validation.php (1.18): Add is_blank()
+
+2002-11-04 10:43  comprock
+
+	* debug_msg.php (1.30): Add php_variables()
+
+2002-11-04 09:56  comprock
+
+	* README (1.25), TODO (1.23): [no log message]
+
+2002-11-04 09:55  comprock
+
+	* ChangeLog (1.13), INSTALL (1.24), LICENSE (1.22), cb_array.php
+	(1.28), cb_common.php (1.30), cb_common_alt.php (1.29),
+	cb_database.php (1.31), cb_date_time.php (1.29),
+	cb_db_table_to_class.php (1.8), cb_dir_file.php (1.26),
+	cb_email.php (1.25), cb_html.php (1.29), cb_javascript.php (1.18),
+	cb_math.php (1.25), cb_string.php (1.31), cb_validation.php (1.17),
+	class.CB_Block_Admin.php (1.13), class.DB_Pager.php (1.3),
+	debug_msg.php (1.29), index.php (1.17), phpinfo.php (1.25): Header
+	Update
+
+2002-11-04 09:46  comprock
+
+	* debug_msg.php (1.28), index.php (1.16), phpinfo.php (1.24),
+	cb_date_time.php (1.28), cb_db_table_to_class.php (1.7),
+	cb_dir_file.php (1.25), cb_email.php (1.24), cb_html.php (1.28),
+	cb_javascript.php (1.17), cb_math.php (1.24), cb_string.php (1.30),
+	cb_validation.php (1.16), class.CB_Block_Admin.php (1.12): Conflict
+	fix IC to SF update
+
+2002-11-04 06:48  comprock
+
+	* cb_array.php (1.27), class.CB_Block_Admin.php (1.11),
+	class.DB_Pager.php (1.2): Header fix Conflict fix
+
+2002-11-02 20:57  comprock
+
+	* debug_msg.php (1.27): Add php_variables()
+
+2002-11-02 18:34  comprock
+
+	* ChangeLog (1.12): Update ChangeLog
+
+2002-11-01 01:07  comprock
+
+	* cb_validation.php (1.15), class.CB_Block_Admin.php (1.10): Add
+	is_blank() Correct show_title() Restructure phpws_mail show_block()
+
+2002-10-31 20:29  comprock
+
+	* cb_database.php (1.30), cb_string.php (1.29),
+	class.CB_Block_Admin.php (1.9): Use sql_query() Add sql_queries()
+	for database dump querys (multiple queries) Restructure str2arr()
+
+2002-10-24 22:02  comprock
+
+	* beautify/: PEAR.php (1.2, rel_1-19-0), beautify_php.class.inc
+	(1.2), beautify_php.php (1.2) (utags: rel_1-18-0): 0.4.6 reload
+	C-brace default 3 space indent default
+
+2002-10-24 21:48  comprock
+
+	* beautify/: LICENSE (1.1, rel_1-19-0, rel_1-18-0), LICENSE_GPL
+	(1.1, rel_1-19-0, rel_1-18-0), PEAR.php (1.1), beautify_php (1.1,
+	rel_1-19-0, rel_1-18-0), beautify_php.class.inc (1.1),
+	beautify_php.php (1.1), doc/blank.html (1.1, rel_1-19-0,
+	rel_1-18-0), doc/classtrees_default.html (1.1, rel_1-19-0,
+	rel_1-18-0), doc/classtrees_php_beautify.html (1.1, rel_1-19-0,
+	rel_1-18-0), doc/elementindex.html (1.1, rel_1-19-0, rel_1-18-0),
+	doc/elementindex_default.html (1.1, rel_1-19-0, rel_1-18-0),
+	doc/elementindex_php_beautify.html (1.1, rel_1-19-0, rel_1-18-0),
+	doc/errors.html (1.1, rel_1-19-0, rel_1-18-0), doc/index.html (1.1,
+	rel_1-19-0, rel_1-18-0), doc/li_default.html (1.1, rel_1-19-0,
+	rel_1-18-0), doc/li_php_beautify.html (1.1, rel_1-19-0,
+	rel_1-18-0), doc/packages.html (1.1, rel_1-19-0, rel_1-18-0),
+	doc/php_beautify/_php_beautify_php_class_inc.html (1.1, rel_1-19-0,
+	rel_1-18-0), doc/php_beautify/_php_beautify_php_php.html (1.1,
+	rel_1-19-0, rel_1-18-0), doc/php_beautify/phpBeautify.html (1.1,
+	rel_1-19-0, rel_1-18-0): Add PHP beautification code
+
+2002-10-24 21:22  comprock
+
+	* ChangeLog (1.11), INSTALL (1.23), LICENSE (1.21), README (1.24),
+	TODO (1.22), cb_array.php (1.26), cb_common.php (1.29),
+	cb_common_alt.php (1.28), cb_database.php (1.29), cb_date_time.php
+	(1.27), cb_db_table_to_class.php (1.6), cb_dir_file.php (1.24),
+	cb_email.php (1.23), cb_html.php (1.27), cb_javascript.php (1.16),
+	cb_math.php (1.23), cb_string.php (1.28), cb_validation.php (1.14),
+	class.CB_Block_Admin.php (1.8), class.DB_Pager.example.php (1.1,
+	rel_1-19-0, rel_1-18-0), class.DB_Pager.php (1.1), debug_msg.php
+	(1.26), index.php (1.15), phpinfo.php (1.23): IC to SF updates
+
+2002-10-23 20:57  comprock
+
+	* phpMyEdit/: doc/COPYING (1.1, rel_1-19-0, rel_1-18-0),
+	doc/ChangeLog (1.2), doc/README (1.2), doc/language-codes.txt (1.2,
+	rel_1-19-0, rel_1-18-0), images/pme-change.png (1.2),
+	images/pme-copy.png (1.2), images/pme-delete.png (1.2),
+	images/pme-view.png (1.2), lang/PME.lang.DE.inc (1.2),
+	lang/PME.lang.EN-US.inc (1.2), lang/PME.lang.EN.inc (1.2),
+	lang/PME.lang.FR.inc (1.2), lang/PME.lang.IT.inc (1.2),
+	lang/PME.lang.NL.inc (1.2), lang/PME.lang.PG.inc (1.2),
+	lang/PME.lang.PL.inc (1.1), lang/PME.lang.SK.inc (1.2),
+	lang/PME.lang.SP.inc (1.2): File include fixes Begin phpMyEdit
+	upgrade
+
+2002-10-20 16:26  comprock
+
+	* htmlMimeMail/: API.txt (1.1), RFC822.php (1.1), background.gif
+	(1.1), changelog.txt (1.1), example.1.php (1.1), example.2.php
+	(1.1), example.3.php (1.1), example.4.php (1.1), example.5.php
+	(1.1), example.html (1.1), example.txt (1.1), example.zip (1.1),
+	htmlMimeMail.php (1.1), mimePart.php (1.1), smtp.php (1.1) (utags:
+	rel_1-18-0, rel_1-19-0): Add HTML Mime mail Version 2.5.0 to
+	cb_common
+
+2002-10-20 16:07  comprock
+
+	* ChangeLog (1.10), class.CB_Block_Admin.php (1.7): Minor bug fixes
+	Improved file include handling Reload SQL scripts
+
+2002-10-20 14:48  comprock
+
+	* class.CB_Block_Admin.php (1.6): Fix e-mail spacing error
+
+2002-10-20 14:26  comprock
+
+	* INSTALL (1.22), LICENSE (1.20), README (1.23), TODO (1.21),
+	cb_array.php (1.25), cb_common.php (1.28), cb_common_alt.php
+	(1.27), cb_database.php (1.28), cb_date_time.php (1.26),
+	cb_db_table_to_class.php (1.5), cb_dir_file.php (1.23),
+	cb_email.php (1.22), cb_html.php (1.26), cb_javascript.php (1.15),
+	cb_math.php (1.22), cb_string.php (1.27), cb_validation.php (1.13),
+	debug_msg.php (1.25), index.php (1.14), phpinfo.php (1.22): IC to
+	SF update
+
+2002-10-20 12:16  comprock
+
+	* phpMyEdit/phpMyEdit.class.php (1.7): Restore version 1.3
+
+2002-10-20 12:13  comprock
+
+	* phpMyEdit/phpMyEdit.class.php (1.6): Reload 1.3
+
+2002-10-18 08:05  comprock
+
+	* phpMyEdit/phpMyEdit.class.php (1.5): Fix duplicate execute error
+
+2002-10-18 07:49  comprock
+
+	* phpMyEdit/: phpMyEdit.class.php (1.4), phpMyEditSetup.php (1.2):
+	Apply phpMyEdit 5-1 updates
+
+2002-10-16 20:47  comprock
+
+	* ChangeLog (1.9): Update ChangeLog
+
+2002-10-16 20:45  comprock
+
+	* class.CB_Block_Admin.php (1.5): Uppercase block title on
+	Installation
+
+2002-10-16 17:55  comprock
+
+	* INSTALL (1.21), LICENSE (1.19), README (1.22), TODO (1.20),
+	cb_array.php (1.24), cb_common.php (1.27), cb_common_alt.php
+	(1.26), cb_database.php (1.27), cb_date_time.php (1.25),
+	cb_db_table_to_class.php (1.4), cb_dir_file.php (1.22),
+	cb_email.php (1.21), cb_html.php (1.25), cb_javascript.php (1.14),
+	cb_math.php (1.21), cb_string.php (1.26), cb_validation.php (1.12),
+	class.CB_Block_Admin.php (1.4), debug_msg.php (1.24), index.php
+	(1.13), phpinfo.php (1.21): IC to SF updates
+
+2002-10-15 21:25  comprock
+
+	* ChangeLog (1.8): Update ChangeLog
+
+2002-10-15 14:15  comprock
+
+	* INSTALL (1.20), LICENSE (1.18), README (1.21), TODO (1.19),
+	cb_array.php (1.23), cb_common.php (1.26), cb_common_alt.php
+	(1.25), cb_database.php (1.26), cb_date_time.php (1.24),
+	cb_db_table_to_class.php (1.3), cb_dir_file.php (1.21),
+	cb_email.php (1.20), cb_html.php (1.24), cb_javascript.php (1.13),
+	cb_math.php (1.20), cb_string.php (1.25), cb_validation.php (1.11),
+	class.CB_Block_Admin.php (1.3), debug_msg.php (1.23), index.php
+	(1.12), phpinfo.php (1.20): [no log message]
+
+2002-10-14 13:54  comprock
+
+	* ChangeLog (1.7): Update ChangeLog
+
+2002-10-14 13:49  comprock
+
+	* INSTALL (1.19), LICENSE (1.17), README (1.20), TODO (1.18),
+	cb_array.php (1.22), cb_common.php (1.25), cb_common_alt.php
+	(1.24), cb_database.php (1.25), cb_date_time.php (1.23),
+	cb_db_table_to_class.php (1.2), cb_dir_file.php (1.20),
+	cb_email.php (1.19), cb_html.php (1.23), cb_javascript.php (1.12),
+	cb_math.php (1.19), cb_string.php (1.24), cb_validation.php (1.10),
+	class.CB_Block_Admin.php (1.2), debug_msg.php (1.22), index.php
+	(1.11), phpinfo.php (1.19): IC to SF update
+
+2002-10-14 13:45  comprock
+
+	* cb_block_admin.php (1.29), class.CB_Block_Admin.php (1.1): Rename
+	cb_block_admin.php to class.CB_Block_Admin.php
+
+2002-10-14 07:01  comprock
+
+	* INSTALL (1.18), LICENSE (1.16), README (1.19), TODO (1.17),
+	cb_array.php (1.21), cb_block_admin.php (1.28), cb_common.php
+	(1.24), cb_database.php (1.24), cb_date_time.php (1.22),
+	cb_dir_file.php (1.19), cb_email.php (1.18),
+	cb_db_table_to_class.php (1.1), cb_html.php (1.22),
+	cb_javascript.php (1.11), cb_math.php (1.18), cb_string.php (1.23),
+	cb_validation.php (1.9), debug_msg.php (1.21), index.php (1.10),
+	phpinfo.php (1.18): Update IC to SF
+
+2002-10-12 21:10  comprock
+
+	* cb_database.php (1.23): Revise MySQL error message Update
+	listuser configuration structure
+
+2002-10-12 19:35  comprock
+
+	* cb_database.php (1.22): [no log message]
+
+2002-10-12 19:09  comprock
+
+	* cb_database.php (1.21): Add functions: mk_sql_select($select,
+	$from, $where = '') sql_query($query, $database = '')
+	sql_select($select, $from, $where, $database = '')
+	sql_select_object($select, $from, $where, $database = '')
+
+2002-10-08 20:29  comprock
+
+	* cb_common_alt.php (1.23): Comment out cb_block_admin.php include
+
+2002-10-07 09:38  comprock
+
+	* docs/cb_common/: Form.html (1.2), MySQLDB.html (1.2),
+	MySQLField.html (1.2), MySQLTable.html (1.2): Remove unneeded
+	documentation
+
+2002-10-06 20:27  comprock
+
+	* cb_common.php (1.23), phpMyEdit/phpMyEdit.class.php (1.3): Begin
+	file header update for PHPDoc Fix phpMyEdit URL error Add phpMyEdit
+	values descriptions Enable configurations via phpMyEdit for
+	listusers and leads
+
+2002-10-05 17:58  comprock
+
+	* phpMyEdit/phpMyEdit.class.php (1.2): Enable class to work from
+	within another program
+
+2002-10-05 17:15  comprock
+
+	* phpMyEdit/: phpMyEdit.class.php (1.1), phpMyEditSetup.php (1.1),
+	timer.class (1.1): Reimport phpMyEdit 5.0 source
+
+2002-10-05 16:49  comprock
+
+	* phpMyEdit/: doc/AUTHORS (1.1), doc/ChangeLog (1.1), doc/README
+	(1.1), doc/TODO (1.1), doc/language-codes.txt (1.1),
+	images/pme-change.png (1.1), images/pme-copy.png (1.1),
+	images/pme-delete.png (1.1), images/pme-view.png (1.1),
+	lang/PME.lang.DE.inc (1.1), lang/PME.lang.EN-US.inc (1.1),
+	lang/PME.lang.EN.inc (1.1), lang/PME.lang.FR.inc (1.1),
+	lang/PME.lang.IT.inc (1.1), lang/PME.lang.NL.inc (1.1),
+	lang/PME.lang.PG.inc (1.1), lang/PME.lang.SK.inc (1.1),
+	lang/PME.lang.SP.inc (1.1): Import phpMyEdit 5.0 for automatic form
+	and SQL generation
+
+2002-10-05 15:31  comprock
+
+	* class.forms.php (1.4), class.mysqldb.php (1.4),
+	class.mysqlfield.php (1.4), class.mysqltable.php (1.4),
+	class_mysql_form_help.html (1.3), classes.inc.php (1.2): Decided
+	against using this MySQL form class as it seemed to duplicate db
+	abstraction and not handle table joins as nicely as phpMyEdit does.
+
+2002-10-05 11:26  comprock
+
+	* cb_common.php (1.22), cb_common_alt.php (1.22), cb_include.php
+	(1.16): Fix document root include Remove joint include file in
+	preparation for removing cb_common_alt.php
+
+2002-10-05 01:40  comprock
+
+	* ChangeLog (1.6), cb_block_admin.php (1.27), debug_msg.php (1.20),
+	docs/blank.html (1.1, rel_1-19-0, rel_1-18-0),
+	docs/classtrees_cb_common.html (1.1, rel_1-19-0, rel_1-18-0),
+	docs/classtrees_default.html (1.1, rel_1-19-0, rel_1-18-0),
+	docs/elementindex.html (1.1, rel_1-19-0, rel_1-18-0),
+	docs/elementindex_cb_common.html (1.1, rel_1-19-0, rel_1-18-0),
+	docs/elementindex_default.html (1.1, rel_1-19-0, rel_1-18-0),
+	docs/errors.html (1.1, rel_1-19-0, rel_1-18-0), docs/index.html
+	(1.1, rel_1-19-0, rel_1-18-0), docs/li_cb_common.html (1.1,
+	rel_1-19-0, rel_1-18-0), docs/li_default.html (1.1, rel_1-19-0,
+	rel_1-18-0), docs/packages.html (1.1, rel_1-19-0, rel_1-18-0),
+	docs/stylesheet.css (1.1, rel_1-19-0, rel_1-18-0),
+	docs/cb_common/CB_Block_Admin.html (1.1, rel_1-19-0, rel_1-18-0),
+	docs/cb_common/Form.html (1.1), docs/cb_common/MySQLDB.html (1.1),
+	docs/cb_common/MySQLField.html (1.1),
+	docs/cb_common/MySQLTable.html (1.1),
+	docs/cb_common/_common_cb_array_php.html (1.1, rel_1-19-0,
+	rel_1-18-0), docs/cb_common/_common_cb_block_admin_php.html (1.1,
+	rel_1-19-0, rel_1-18-0),
+	docs/cb_common/_common_cb_common_alt_php.html (1.1, rel_1-19-0,
+	rel_1-18-0), docs/cb_common/_common_cb_common_php.html (1.1,
+	rel_1-19-0, rel_1-18-0),
+	docs/cb_common/_common_cb_database_php.html (1.1, rel_1-19-0,
+	rel_1-18-0), docs/cb_common/_common_cb_date_time_php.html (1.1,
+	rel_1-19-0, rel_1-18-0),
+	docs/cb_common/_common_cb_dir_file_php.html (1.1, rel_1-19-0,
+	rel_1-18-0), docs/cb_common/_common_cb_email_php.html (1.1,
+	rel_1-19-0, rel_1-18-0), docs/cb_common/_common_cb_html_php.html
+	(1.1, rel_1-19-0, rel_1-18-0),
+	docs/cb_common/_common_cb_include_php.html (1.1, rel_1-19-0,
+	rel_1-18-0), docs/cb_common/_common_cb_javascript_php.html (1.1,
+	rel_1-19-0, rel_1-18-0), docs/cb_common/_common_cb_math_php.html
+	(1.1, rel_1-19-0, rel_1-18-0),
+	docs/cb_common/_common_cb_string_php.html (1.1, rel_1-19-0,
+	rel_1-18-0), docs/cb_common/_common_cb_validation_php.html (1.1,
+	rel_1-19-0, rel_1-18-0),
+	docs/cb_common/_common_class_forms_php.html (1.1, rel_1-19-0,
+	rel_1-18-0), docs/cb_common/_common_class_mysqldb_php.html (1.1,
+	rel_1-19-0, rel_1-18-0),
+	docs/cb_common/_common_class_mysqlfield_php.html (1.1, rel_1-19-0,
+	rel_1-18-0), docs/cb_common/_common_class_mysqltable_php.html (1.1,
+	rel_1-19-0, rel_1-18-0), docs/cb_common/_common_debug_msg_php.html
+	(1.1, rel_1-19-0, rel_1-18-0),
+	docs/cb_common/_common_index_php.html (1.1, rel_1-19-0,
+	rel_1-18-0), docs/cb_common/_common_phpinfo_php.html (1.1,
+	rel_1-19-0, rel_1-18-0), docs/cb_common/stylesheet.css (1.1,
+	rel_1-19-0, rel_1-18-0), docs/default/_common_classes_inc_php.html
+	(1.1, rel_1-19-0, rel_1-18-0), docs/default/stylesheet.css (1.1,
+	rel_1-19-0, rel_1-18-0): Add docs
+
+2002-10-05 01:24  comprock
+
+	* cb_array.php (1.20), cb_database.php (1.20), cb_date_time.php
+	(1.21), cb_email.php (1.17), cb_javascript.php (1.10),
+	cb_string.php (1.22), cb_validation.php (1.8), classes.inc.php
+	(1.1): Update file headers Add temp class includer for MySQL
+	form/SQL tool
+
+2002-10-05 01:17  comprock
+
+	* TODO (1.16), cb_array.php (1.19), cb_block_admin.php (1.26),
+	cb_common.php (1.21), cb_common_alt.php (1.21), cb_database.php
+	(1.19), cb_date_time.php (1.20), cb_dir_file.php (1.18),
+	cb_email.php (1.16), cb_html.php (1.21), cb_include.php (1.15),
+	cb_javascript.php (1.9), cb_math.php (1.17), cb_string.php (1.21),
+	cb_validation.php (1.7), class.forms.php (1.3), class.mysqldb.php
+	(1.3), class.mysqlfield.php (1.3), class.mysqltable.php (1.3),
+	debug_msg.php (1.19), index.php (1.9), phpinfo.php (1.17): Update
+	file headers
+
+2002-10-04 22:56  comprock
+
+	* class.forms.php (1.2), class.mysqldb.php (1.2),
+	class.mysqlfield.php (1.2), class.mysqltable.php (1.2),
+	class_mysql_form_help.html (1.2): Remove ^M EOLs
+
+2002-10-04 22:51  comprock
+
+	* class.forms.php (1.1), class.mysqldb.php (1.1),
+	class.mysqlfield.php (1.1), class.mysqltable.php (1.1),
+	class_mysql_form_help.html (1.1): Import mysql auto form and sql
+	classes
+
+2002-10-04 17:34  comprock
+
+	* INSTALL (1.17), LICENSE (1.15), README (1.18), TODO (1.15),
+	cb_array.php (1.18), cb_block_admin.php (1.25), cb_common.php
+	(1.20), cb_common_alt.php (1.20), cb_database.php (1.18),
+	cb_date_time.php (1.19), cb_dir_file.php (1.17), cb_email.php
+	(1.15), cb_html.php (1.20), cb_include.php (1.14),
+	cb_javascript.php (1.8), cb_math.php (1.16), cb_string.php (1.20),
+	cb_validation.php (1.6), debug_msg.php (1.18), index.php (1.8),
+	phpinfo.php (1.16): IC to SF Updates
+
+2002-10-03 20:56  comprock
+
+	* ChangeLog (1.5): Update ChangeLog
+
+2002-10-03 20:25  comprock
+
+	* INSTALL (1.16), LICENSE (1.14), README (1.17), TODO (1.14),
+	cb_array.php (1.17), cb_block_admin.php (1.24), cb_common.php
+	(1.19), cb_common_alt.php (1.19), cb_database.php (1.17),
+	cb_date_time.php (1.18), cb_dir_file.php (1.16), cb_email.php
+	(1.14), cb_html.php (1.19), cb_include.php (1.13),
+	cb_javascript.php (1.7), cb_math.php (1.15), cb_string.php (1.19),
+	cb_validation.php (1.5), debug_msg.php (1.17), index.php (1.7),
+	phpinfo.php (1.15): Update IC to SF
+
+2002-10-02 17:00  comprock
+
+	* INSTALL (1.15), LICENSE (1.13), README (1.16), TODO (1.13),
+	cb_array.php (1.16), cb_block_admin.php (1.23), cb_common.php
+	(1.18), cb_database.php (1.16), cb_date_time.php (1.17),
+	cb_dir_file.php (1.15), cb_email.php (1.13), cb_html.php (1.18),
+	cb_include.php (1.12), cb_javascript.php (1.6), cb_math.php (1.14),
+	cb_string.php (1.18), cb_validation.php (1.4), debug_msg.php
+	(1.16), index.php (1.6), phpinfo.php (1.14): IC to SF
+
+2002-09-28 20:01  comprock
+
+	* cb_block_admin.php (1.22): [no log message]
+
+2002-09-28 19:49  comprock
+
+	* cb_block_admin.php (1.21): Fix old PHP version show_source()
+	error
+
+2002-09-28 15:27  comprock
+
+	* ChangeLog (1.4): Update ChangeLog
+
+2002-09-28 14:20  comprock
+
+	* cb_block_admin.php (1.20): Removed 'LIMIT 1' error
+
+2002-09-28 02:45  comprock
+
+	* ChangeLog (1.3): Update ChangeLog
+
+2002-09-28 02:32  comprock
+
+	* ChangeLog (1.2): Update ChangeLog
+
+2002-09-28 02:29  comprock
+
+	* CHANGELOG (1.17), ChangeLog (1.1): Update ChangeLog
+
+2002-09-26 11:04  comprock
+
+	* INSTALL, LICENSE, README, TODO, cb_array.php, cb_block_admin.php,
+	cb_common.php, cb_database.php, cb_date_time.php, cb_dir_file.php,
+	cb_email.php, cb_html.php, cb_include.php, cb_javascript.php,
+	cb_math.php, cb_string.php, cb_validation.php, debug_msg.php,
+	index.php, phpinfo.php
+	(intercosmos.[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]): IC to SF
+	Update
+
+2002-09-25 21:50  comprock
+
+	* cb_block_admin.php (1.19), cb_email.php (1.12), cb_html.php
+	(1.17): Move mk_fake_email() from cb_html.php to cb_email.php
+	Update fake_email() replacement string Update Source Forge download
+	directory
+
+2002-09-24 14:32  comprock
+
+	* cb_include.php (1.11): Fix PHP injection attack weakness
+
+2002-09-23 21:14  comprock
+
+	* CHANGELOG (1.16), cb_common_alt.php (1.18): Update CHANGELOG
+
+2002-09-23 20:23  comprock
+
+	* INSTALL (1.14), LICENSE (1.12), README (1.15), TODO (1.12),
+	cb_array.php (1.15), cb_block_admin.php (1.18), cb_common.php
+	(1.17), cb_common_alt.php (1.17), cb_database.php (1.15),
+	cb_date_time.php (1.16), cb_dir_file.php (1.14), cb_email.php
+	(1.11), cb_html.php (1.16), cb_include.php (1.10),
+	cb_javascript.php (1.5), cb_math.php (1.13), cb_string.php (1.17),
+	cb_validation.php (1.3), debug_msg.php (1.15), index.php (1.5),
+	phpinfo.php (1.13): IC to SF updates
+
+2002-09-23 06:29  comprock
+
+	* INSTALL (1.13), LICENSE (1.11), README (1.14), TODO (1.11),
+	cb_array.php (1.14), cb_block_admin.php (1.17), cb_common.php
+	(1.16), cb_database.php (1.14), cb_date_time.php (1.15),
+	cb_dir_file.php (1.13), cb_email.php (1.10), cb_html.php (1.15),
+	cb_include.php (1.9), cb_javascript.php (1.4), cb_math.php (1.12),
+	cb_string.php (1.16), cb_validation.php (1.2), debug_msg.php
+	(1.14), index.php (1.4), phpinfo.php (1.12) (utags: rel_1-17-0,
+	release_1_5): IC to SF CVS update
+
+2002-09-23 06:23  comprock
+
+	* INSTALL (1.12), cb_array.php (1.13), cb_block_admin.php (1.16),
+	cb_common.php (1.15), cb_common_alt.php (1.16, rel_1-17-0,
+	release_1_5): IC to SF update
+
+2002-09-22 16:03  comprock
+
+	* README (1.13): Update overwrite text
+
+2002-09-21 22:28  comprock
+
+	* CHANGELOG (1.15, rel_1-17-0, release_1_5): Update CHANGELOG
+
+2002-09-21 22:25  comprock
+
+	* CHANGELOG (1.14): Update CHANGELOG
+
+2002-09-21 22:02  comprock
+
+	* README (1.12), index.php (1.3): Use update Add index.php for
+	phpWebSite module installer compatibility
+
+2002-09-21 21:22  comprock
+
+	* cb_html.php (1.14): Textual changes
+
+2002-09-21 21:20  comprock
+
+	* cb_html.php (1.13): mv MakeFakeEmail() mk_fake_email()
+
+2002-09-21 21:13  comprock
+
+	* cb_javascript.php (1.3): Fix parse error
+
+2002-09-21 18:56  comprock
+
+	* cb_javascript.php (1.2): mv alert_message_and_return()
+	alert_message() Restructure code in phpws_mail
+
+2002-09-21 17:46  comprock
+
+	* cb_email.php (1.9), cb_include.php (1.8): Update includes Add
+	is_valid_email()
+
+2002-09-21 17:45  comprock
+
+	* cb_javascript.php (1.1), cb_validation.php (1.1): Add
+	is_valid_referer() Add alert_message_and_return()
+
+2002-09-20 18:54  comprock
+
+	* cb_common_alt.php (1.15): Fix local script usage
+
+2002-09-20 17:35  comprock
+
+	* CHANGELOG (1.13), INSTALL (1.11), LICENSE (1.10), README (1.11),
+	TODO (1.10), cb_array.php (1.12), cb_block_admin.php (1.15),
+	cb_common.php (1.14), cb_common_alt.php (1.14), cb_database.php
+	(1.13), cb_date_time.php (1.14), cb_dir_file.php (1.12),
+	cb_email.php (1.8), cb_html.php (1.12), cb_include.php (1.7),
+	cb_math.php (1.11), cb_string.php (1.15), debug_msg.php (1.13),
+	phpinfo.php (1.11): IC to SF updates
+
+2002-09-20 15:40  comprock
+
+	* cb_html.php (1.11): Use str_replace vs eregi_replace in
+	MakeFakeEmail()
+
+2002-09-17 15:15  comprock
+
+	* CHANGELOG (1.12), INSTALL (1.10), LICENSE (1.9), README (1.10),
+	TODO (1.9), cb_array.php (1.11), cb_block_admin.php (1.14),
+	cb_common.php (1.13), cb_database.php (1.12), cb_date_time.php
+	(1.13), cb_dir_file.php (1.11), cb_email.php (1.7), cb_html.php
+	(1.10), cb_include.php (1.6), cb_math.php (1.10), cb_string.php
+	(1.14), debug_msg.php (1.12), phpinfo.php (1.10): Update IC to SF
+
+2002-09-17 11:58  comprock
+
+	* CHANGELOG (1.11), cb_common_alt.php (1.13): Update CHANGELOG
+
+2002-09-17 07:07  comprock
+
+	* CHANGELOG (1.10), cb_block_admin.php (1.13), cb_common_alt.php
+	(1.12), cb_database.php (1.11), cb_dir_file.php (1.10), cb_math.php
+	(1.9), cb_string.php (1.13), phpinfo.php (1.9): IC to SF updates
+
+2002-09-16 22:06  comprock
+
+	* CHANGELOG (1.9), cb_common_alt.php (1.11): Update CHANGELOG
+
+2002-09-16 21:38  comprock
+
+	* cb_block_admin.php (1.12): Fix display_file() show_source
+	depending upon PHP verison
+
+2002-09-16 21:09  comprock
+
+	* cb_block_admin.php (1.11): Fix older PHP document root problem
+
+2002-09-16 18:45  comprock
+
+	* cb_block_admin.php (1.10): Fixed older PHP document root setting
+	problem
+
+2002-09-16 18:43  comprock
+
+	* cb_common.php (1.12): Fix older PHP document root setting
+	problem.
+
+2002-09-16 18:04  comprock
+
+	* INSTALL (1.9), LICENSE (1.8), README (1.9), TODO (1.8),
+	cb_array.php (1.10), cb_block_admin.php (1.9), cb_common.php
+	(1.11), cb_common_alt.php (1.10), cb_database.php (1.10),
+	cb_date_time.php (1.12), cb_dir_file.php (1.9), cb_email.php (1.6),
+	cb_html.php (1.9), cb_include.php (1.5), cb_math.php (1.8),
+	cb_string.php (1.12), debug_msg.php (1.11), phpinfo.php (1.8): [no
+	log message]
+
+2002-09-16 17:23  comprock
+
+	* CHANGELOG (1.8), INSTALL (1.8), LICENSE (1.7), README (1.8), TODO
+	(1.7), cb_array.php (1.9), cb_block_admin.php (1.8), cb_common.php
+	(1.10), cb_common_alt.php (1.9), cb_database.php (1.9),
+	cb_date_time.php (1.11), cb_dir_file.php (1.8), cb_email.php (1.5),
+	cb_html.php (1.8), cb_include.php (1.4), cb_math.php (1.7),
+	cb_string.php (1.11), debug_msg.php (1.10), phpinfo.php (1.7): [no
+	log message]
+
+2002-09-13 16:42  comprock
+
+	* CHANGELOG (1.7), INSTALL (1.7), LICENSE (1.6), README (1.7), TODO
+	(1.6), cb_array.php (1.8), cb_block_admin.php (1.7), cb_common.php
+	(1.9), cb_common_alt.php (1.8), cb_database.php (1.8),
+	cb_date_time.php (1.10), cb_dir_file.php (1.7), cb_email.php (1.4),
+	cb_html.php (1.7), cb_include.php (1.3), cb_math.php (1.6),
+	cb_string.php (1.10), debug_msg.php (1.9), index.php (1.2),
+	phpinfo.php (1.6): removed botched cvs import
+
+2002-09-13 16:15  comprock
+
+	* CHANGELOG (1.6), INSTALL (1.6), LICENSE (1.5), README (1.6), TODO
+	(1.5), cb_array.php (1.7), cb_block_admin.php (1.6), cb_common.php
+	(1.8), cb_common_alt.php (1.7), cb_database.php (1.7),
+	cb_date_time.php (1.9), cb_dir_file.php (1.6), cb_email.php (1.3),
+	cb_html.php (1.6), cb_include.php (1.2), cb_math.php (1.5),
+	cb_string.php (1.9), debug_msg.php (1.8), phpinfo.php (1.5): IC to
+	SF
+
+2002-09-13 14:57  comprock
+
+	* cb_common_alt.php (1.6): [no log message]
+
+2002-09-13 12:23  comprock
+
+	* CHANGELOG (1.5), INSTALL (1.5), LICENSE (1.4), README (1.5), TODO
+	(1.4), cb_array.php (1.6), cb_block_admin.php (1.5), cb_common.php
+	(1.7), cb_common_alt.php (1.5), cb_database.php (1.6),
+	cb_date_time.php (1.8), cb_dir_file.php (1.5), cb_email.php (1.2),
+	cb_html.php (1.5), cb_math.php (1.4), cb_string.php (1.8),
+	debug_msg.php (1.7), phpinfo.php (1.4): Update IC to SF
+
+2002-09-13 12:22  comprock
+
+	* cb_include.php (1.1): Consolidate cb_common includes
+
+2002-09-13 10:07  comprock
+
+	* CHANGELOG (1.4), INSTALL (1.4), LICENSE (1.3), README (1.4), TODO
+	(1.3), cb_array.php (1.5), cb_block_admin.php (1.4), cb_common.php
+	(1.6), cb_common_alt.php (1.4), cb_database.php (1.5),
+	cb_date_time.php (1.7), cb_dir_file.php (1.4), cb_html.php (1.4),
+	cb_math.php (1.3), cb_string.php (1.7), debug_msg.php (1.6),
+	phpinfo.php (1.3): Conflict resolve
+
+2002-09-12 20:22  comprock
+
+	* cb_common_alt.php (1.3): fix conflicts
+
+2002-09-12 14:09  comprock
+
+	* cb_date_time.php (1.6): add two_digit_year2four_digit_year()
+
+2002-09-12 13:30  comprock
+
+	* cb_string.php (1.6): add zero_prepend()
+
+2002-09-12 08:54  comprock
+
+	* cb_common.php (1.5), cb_common_alt.php (1.2), cb_email.php (1.1):
+	mv wait_a_moment() from cb_common.php to cb_date_time.php mv
+	wait_a_moment() from cb_common.php to cb_email.php update includes
+
+2002-09-12 08:53  comprock
+
+	* cb_date_time.php (1.5): mv wait_a_moment() from cb_common.php add
+	create_date_array()
+
+2002-09-12 08:52  comprock
+
+	* cb_array.php (1.4): update file header
+
+2002-09-12 06:50  comprock
+
+	* debug_msg.php (1.5): Quit debug_msg() if !debug_msg_on &&
+	!send_email
+
+2002-09-11 20:11  comprock
+
+	* cb_database.php (1.4), cb_date_time.php (1.4), cb_string.php
+	(1.5), debug_msg.php (1.4): update file header need to test
+	YYYYMMDDHHMMSS added $var_dump boolean to debug_msg()
+
+2002-09-11 16:06  comprock
+
+	* cb_date_time.php (1.3), cb_string.php (1.4): add sub_str() same
+	as substr() but with strval() added add usertime2mysql() add
+	usertime2array()
+
+2002-09-11 09:07  comprock
+
+	* cb_date_time.php (1.2): add user_time_to_mysql_time()
+
+2002-09-11 06:37  comprock
+
+	* CHANGELOG (1.3), INSTALL (1.3), LICENSE (1.2), README (1.3), TODO
+	(1.2), cb_array.php (1.3), cb_block_admin.php (1.3), cb_common.php
+	(1.4), cb_database.php (1.3), cb_dir_file.php (1.3), cb_html.php
+	(1.3), cb_math.php (1.2), cb_string.php (1.3), cb_time_date.php
+	(1.3), debug_msg.php (1.3), phpinfo.php (1.2): update CB to SF
+
+2002-09-11 06:36  comprock
+
+	* cb_common_alt.php (1.1), cb_date_time.php (1.1): rename
+	cb_time_date.php to cb_date_time.php add alternative
+	cb_common_alt.php setup file for nonstandard installations
+
+2002-09-09 21:22  comprock
+
+	* cb_math.php (1.1): math procedures
+
+2002-09-08 14:11  comprock
+
+	* cb_array.php (1.2), CHANGELOG (1.2), INSTALL (1.2), README (1.2),
+	cb_block_admin.php (1.2), cb_common.php (1.3), cb_database.php
+	(1.2), cb_dir_file.php (1.2), cb_html.php (1.2), cb_string.php
+	(1.2), cb_time_date.php (1.2), debug_msg.php (1.2): cb to sf
+	revision updates
+
+2002-09-08 14:10  comprock
+
+	* LICENSE (1.1), TODO (1.1), phpinfo.php (1.1): Move from BSD to
+	Lesser GNU Public License add phpinfo() mv TODO out of README
+
+2002-09-07 16:31  comprock
+
+	* block_admin.php (1.2), cb_common_mod_install.php (1.2),
+	cb_common_mod_uninstall.php (1.2): mv block_admin.php to
+	cb_block_admin.php mv install/uninstall code to cb_block_admin.php
+
+2002-09-07 16:29  comprock
+
+	* CHANGELOG (1.1), INSTALL (1.1), README (1.1), cb_array.php (1.1),
+	cb_block_admin.php (1.1), cb_common.php (1.2), cb_database.php
+	(1.1), cb_dir_file.php (1.1), cb_html.php (1.1), cb_string.php
+	(1.1), cb_time_date.php (1.1), debug_msg.php (1.1), index.php
+	(1.1): uploading cb_common revisions
+
+2002-08-11 22:18  comprock
+
+	* block_admin.php (1.1), cb_common.php (1.1),
+	cb_common_mod_install.php (1.1), cb_common_mod_uninstall.php (1.1):
+	Initial revision
+
+2002-08-11 22:18  comprock
+
+	* block_admin.php (1.1.1.1), cb_common.php (1.1.1.1),
+	cb_common_mod_install.php (1.1.1.1), cb_common_mod_uninstall.php
+	(1.1.1.1) (utags: start): import cb_common sources
+

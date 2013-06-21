@@ -1,0 +1,180 @@
+<!-- $Platon: phpMyEdit/doc/sgml/other-information.sgml,v 1.2 2002/11/14 23:14:18 nepto Exp $ -->
+
+<chapter id="other-information">
+<title id="other-information.title">Other information</title>
+
+<sect1 id="other-information.author-and-homepage">
+<title id="other-information.author-and-homepage.title">Authors and homepage</title>
+<para>
+
+&name; had amount of project maintainers.
+
+<itemizedlist>
+<listitem><para>
+
+John McCreesh <email>jpmcc@users.sourceforge.net</email> founded project and
+developed all versions 0.x, 1.x, 2.x and 3.x.
+
+</para></listitem>
+<listitem><para>
+
+Jim Kraai <email>jkraai@users.sourceforge.net</email> maintains phpMyEdit
+versions 4.x.
+
+</para></listitem>
+<listitem><para>
+
+Ondrej Jombik <email>nepto@users.sourceforge.net</email> is current project
+maintainer. He develops version 5.0 and laters.
+
+</para></listitem>
+</itemizedlist>
+
+</para>
+<para>
+
+Many thanks to various project contributors. See
+<filename>doc/ChangeLog</filename> file for credits.
+
+</para>
+<para>
+
+Please do not write previous maintainers support questions, suggestions, bug
+reports or patches. Use SourceForge bug tracking system, &name; mailinglist or
+current maintainer e-mail address.
+
+</para>
+<para>
+
+Copyright (c) 2002 Platon software development group, <ulink
+url="http://www.platon.sk/">http://www.platon.sk/</ulink>
+
+</para>
+<para>
+
+The latest official release of &name; is available from: <ulink
+url="http://www.platon.sk/projects/&name;/">http://www.platon.sk/projects/&name;/</ulink>
+
+</para>
+</sect1>
+
+<sect1 id="other-information.license">
+<title id="other-information.license.title">License</title>
+<para>
+
+This program is free software; you can redistribute it and/or modify it under
+the terms of the GNU General Public License as published by the Free Software
+Foundation; either version 2, or (at your option) any later version.
+
+</para>	
+<para>
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+</para>	
+<para>
+
+You should have received a copy of the GNU General Public License along with
+this program; if not, write to the Free Software Foundation, Inc., 59 Temple
+Place - Suite 330, Boston, MA 02111-1307, USA.
+
+</para>	
+</sect1>
+
+<sect1 id="other-information.request-to-users">
+<title id="other-information.request-to-users.title">Request to users</title>
+<para>
+
+Feel free to correct the text of the documents and messages in this script if
+you find some mistake or typo.
+
+</para>
+<para>
+
+Comments, suggestions, bug reports and patches are always welcome. Please e-mail
+them to the following <email>platon@pobox.sk</email> e-mail address and write
+'&name;' keyword in the Subject line.
+
+</para>
+<para>
+
+Likewise, if you don't find in <filename class=directory>lang/</filename>
+subdirectory a translation into your language, you can make one. But firstly ask
+me, if that translation is not already made, because you could not have actual
+version of &name;.
+
+</para>
+</sect1>
+
+<sect1 id="other-information.mailinglist"><title>Mailinglist</title>
+<para>
+
+There is &name; mailinglist provided on <ulink
+url="http://sourceforge.net/">SourceForge.Net</ulink>.  Subscription is strongly
+recommended, especially if you want to discuss new features or participate on
+further ideas and thoughts.
+
+</para>
+<para>
+
+You can join this mailinglist by accessing following link
+
+</para>
+<para>
+
+<ulink url="http://lists.sourceforge.net/lists/listinfo/phpmyedit-discuss">
+	http://lists.sourceforge.net/lists/listinfo/phpmyedit-discuss
+</ulink>
+
+</para>
+<para>
+
+Another possibility is by sending e-mail with keyword 'subscribe' in Subject
+line to following e-mail address
+
+</para>
+<para>
+
+<email>phpmyedit-discuss-request@lists.sourceforge.net</email>
+
+</para>
+</sect1>
+
+<sect1 id="other-information.cvs-access"><title>CVS access</title>
+<para>
+
+Whole &name; project is provided in <ulink url="http://www.platon.sk/">Platon
+SDG</ulink> <ulink url="http://www.platon.sk/cvs/cvs.php/&name;/">CVS
+repository</ulink>. 
+
+</para>
+<para>
+
+Particular CVS instructions follows. Platon CVS repository can be checked out
+through anonymous (pserver) CVS with the following instruction set. When
+prompted for a password for anonymous, simply press the <keycap>Enter</keycap>
+key.
+
+</para>
+<para>
+
+<screen>
+	<!-- <prompt>$</prompt> --><userinput>export CVSROOT=:pserver:anonymous@kepler.fmph.uniba.sk:/home/cvs</userinput>
+	<!-- <prompt>$</prompt> --><userinput>cvs login</userinput>
+	<!-- <prompt>$</prompt> --><userinput>cvs checkout &name;</userinput>
+</screen>
+
+</para>
+<para>
+
+These commands should work with no problems on any UNIX-like system with cvs
+client installed. For checkouting on MS-Windows platform you can use one from
+several free available CVS client softwares.
+
+</para>
+</sect1>
+
+</chapter>
+

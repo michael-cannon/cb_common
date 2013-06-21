@@ -1,0 +1,58 @@
+<!-- $Platon: phpMyEdit/doc/sgml/configuration.sgml,v 1.1 2002/11/03 23:47:00 nepto Exp $ -->
+
+<!--
+
+Read this carefully:
+
+Because there is chapter "Configuration" and sections (1) "General options" and
+"Fields options", all particular general/fields options are in subsections (2).
+But it means, that all general options are on one page and all fields options
+are on another one page.
+
+In future, if options descriptions grows and you will want to have one HTML page
+for every option, you must remove "Configuration" chapter and create "General
+configuration" and "Fields configuration" chapters with particular option
+sections. These sections will be level 1, so one level higher that is it now.
+Every option will have its own HTML page.
+
+Nepto [3/11/2002]
+
+-->
+
+<chapter id="configuration">
+<title>Configuration</title>
+
+<para>
+
+Open the script in your text editor. No HTML header or footer is created, thus
+you may want to include a header at the top of the script, and include a
+footer at the end of the script.
+
+</para>
+
+<sect1 id="configuration.general">
+<title id="configuration.general.title">General options</title>
+<para>
+
+TODO: General options basic speech
+
+</para>
+
+&configuration.general;
+
+</sect1>
+
+<sect1 id="configuration.fields">
+<title id="configuration.fields.title">Fields options</title>
+<para>
+
+TODO: Fields options basic speech
+
+</para>
+
+&configuration.fields;
+
+</sect1>
+
+</chapter>
+

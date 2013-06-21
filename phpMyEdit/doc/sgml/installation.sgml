@@ -1,0 +1,111 @@
+<!-- $Platon: phpMyEdit/doc/sgml/installation.sgml,v 1.1 2002/11/03 23:47:00 nepto Exp $ -->
+
+<chapter id="installation">
+<title>Installation</title>
+
+<para>
+In this chapter are detailed installation notes written.
+</para>
+
+<sect1 id="installation.getting-started">
+<title id="installation.getting-started.title">Getting started</title>
+<para>
+
+&name; enables PHP scripters to quickly create a form for use with a MySQL
+database table. The resulting form can be used to Add, Change, Copy, or Delete
+records.
+
+</para>
+<para>
+
+&name; is available for download from <ulink
+url="http://phpmyedit.sourceforge.net">Sourceforge.net</ulink>. Extract, or unzip,
+the program files to your computer's hard disk. The download file includes icons
+and various language files which belong in sub-folders.
+
+</para>
+<important><para>
+
+Before installing the files on your webserver, the filenames are
+case sensitive (don't force lower case upon uploading). 
+
+</para></important>
+<para>
+
+Point your web browser to the file named <filename>phpMyEditSetup.php</filename>
+and log on to your MySQL database. The logon screen should resemble the picture
+below.
+
+</para>
+<para>
+
+<mediaobject>
+<imageobject><imagedata fileref="images/logon.gif" format="gif"></imageobject>
+<textobject><phrase>&name; logon screen</phrase></textobject>
+<!-- <caption><para>TODO</para></caption> -->
+</mediaobject>
+
+</para>
+</sect1>
+
+<sect1 id="installation.table-selection">
+<title id="installation.table-selection.title">Table selection</title>
+<para>
+
+After successfully logging on to your database server, a list of tables should
+appear. Select a table and click Submit.
+
+</para>
+<para>
+
+<mediaobject>
+<imageobject><imagedata fileref="images/table-selection.gif" format="gif"></imageobject>
+<textobject><phrase>&name; table selection screen</phrase></textobject>
+<!-- <caption><para>TODO</para></caption> -->
+</mediaobject>
+
+</para>
+</sect1>
+
+<sect1 id="installation.id-selection">
+<title id="installation.id-selection.title">ID selection</title>
+<para>
+
+After selecting a MySQL table a list of columns, or fields, should appear.
+Select a unique numeric identifier and click Submit.
+
+</para>
+<para>
+
+<mediaobject>
+<imageobject><imagedata fileref="images/id-selection.gif" format="gif"></imageobject>
+<textobject><phrase>&name; ID selection screen</phrase></textobject>
+<!-- <caption><para>TODO</para></caption> -->
+</mediaobject>
+
+</para>
+</sect1>
+
+<sect1 id="installation.result-script">
+<title id="installation.result-script.title">Result script</title>
+<para>
+
+After selecting a unique identifier, the script should appear in your web
+browser. Highlight and copy the script, then paste it in your text editor.
+Depending on your system configuration, the script may be written to the current
+directory.
+
+</para>
+<para>
+
+<mediaobject>
+<imageobject><imagedata fileref="images/result-script.gif" format="gif"></imageobject>
+<textobject><phrase>&name; result script screen</phrase></textobject>
+<!-- <caption><para>TODO</para></caption> -->
+</mediaobject>
+
+</para>
+</sect1>
+
+</chapter>
+

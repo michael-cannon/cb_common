@@ -1,0 +1,507 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<title>Docs For Class phpBeautify</title>
+	<link rel="stylesheet" type="text/css" id="layout" href="../media/layout.css">
+	<link rel="stylesheet" type="text/css" href="../media/style.css">
+</head>
+
+<body>
+<div id="header">
+	<div id="navLinks">
+		[ <a href="../classtrees_php_beautify.html">Class Tree: php_beautify</a> ]
+		[ <a href="../elementindex_php_beautify.html">Index: php_beautify</a> ]
+		[ <a href="../elementindex.html">All elements</a> ]
+	</div>
+	<div id="packagePosition">
+		<div id="packageTitle2">php_beautify</div>
+		<div id="packageTitle">php_beautify</div>
+		<div id="elementPath"> &middot; </div>
+	</div>
+</div>
+
+<div id="nav" class="small">
+	<div id="ric">
+					<p><a href="../ric_INSTALL.html">INSTALL</a></p>
+					<p><a href="../ric_ChangeLog.html">ChangeLog</a></p>
+					<p><a href="../ric_README.html">README</a></p>
+			</div>
+	<div id="todolist">
+			<p><a href="../todolist.html">Todo List</a></p>
+	</div>
+	<div id="packages">
+		Packages:
+					<p><a href="../li_cb_common.html">cb_common</a></p>
+					<p><a href="../li_Mail.html">Mail</a></p>
+					<p><a href="../li_php_beautify.html">php_beautify</a></p>
+			</div>
+
+				<div id="index">
+			<div id="files">
+								Files:<br>
+								<a href="../php_beautify/_common_beautify_beautify_php_class_inc.html">		beautify_php.class.inc
+		</a><br>
+			<a href="../php_beautify/_common_beautify_beautify_php_php.html">		beautify_php.php
+		</a><br>
+				</div>
+			<div id="classes">
+				Classes:<br>
+								<a href="../php_beautify/phpBeautify.html">		phpBeautify
+		</a><br>
+				</div>
+		</div>
+	</div>
+
+<div id="body">
+			<h1>Class: phpBeautify</h1>
+	<p style="margin: 0px;">Source Location: Program_Root/beautify/beautify_php.class.inc</p>
+	
+
+<div class="leftcol">
+	<h3><a href="#class_details">Class Overview</a> <span class="smalllinenumber">[line 55]</span></h3>
+	<div id="classTree"><pre><a href="../cb_common/PEAR.html">PEAR</a>
+   |
+   --phpBeautify</pre>
+</div>
+	<div class="small">
+	<p>Class to beautify php code</p>
+		<h4>Author(s):</h4>
+	<ul>
+								</ul>
+	<h4>Version:</h4>
+	<ul>
+								</ul>
+
+	<h4>Copyright:</h4>
+	<ul>
+								</li>
+	</div>
+</div>
+
+<div class="middlecol">
+	<h3><a href="#class_vars">Variables</a></h3>
+	<ul class="small">
+				<li><a href="../php_beautify/phpBeautify.html#var$braces">$braces</a></li>
+				<li><a href="../php_beautify/phpBeautify.html#var$del_line">$del_line</a></li>
+				<li><a href="../php_beautify/phpBeautify.html#var$file">$file</a></li>
+				<li><a href="../php_beautify/phpBeautify.html#var$find_functions">$find_functions</a></li>
+				<li><a href="../php_beautify/phpBeautify.html#var$highlight">$highlight</a></li>
+				<li><a href="../php_beautify/phpBeautify.html#var$indent_long_comments">$indent_long_comments</a></li>
+				<li><a href="../php_beautify/phpBeautify.html#var$indent_width">$indent_width</a></li>
+				<li><a href="../php_beautify/phpBeautify.html#var$max">$max</a></li>
+				<li><a href="../php_beautify/phpBeautify.html#var$max_line">$max_line</a></li>
+				<li><a href="../php_beautify/phpBeautify.html#var$verify">$verify</a></li>
+				<li><a href="../php_beautify/phpBeautify.html#var$version">$version</a></li>
+			</ul>
+</div>
+<div class="rightcol">
+	<h3><a href="#class_methods">Methods</a></h3>
+	<ul class="small">
+				<li><a href="../php_beautify/phpBeautify.html#methodphpBeautify">phpBeautify</a></li>
+				<li><a href="../php_beautify/phpBeautify.html#methodbeautify">beautify</a></li>
+				<li><a href="../php_beautify/phpBeautify.html#methodgetVersion">getVersion</a></li>
+				<li><a href="../php_beautify/phpBeautify.html#methodtoHTML">toHTML</a></li>
+				<li><a href="../php_beautify/phpBeautify.html#method_findfunctions">_findfunctions</a></li>
+			</ul>
+</div>
+
+<div id="content">
+<hr>
+	<div class="contents">
+	</div>
+
+	<div class="leftCol">
+	<h2>Inherited Variables</h2>
+		</div>
+
+	<div class="rightCol">
+	<h2>Inherited Methods</h2>
+			<div class="indent">
+		<h3>Class: <a href="../cb_common/PEAR.html">PEAR</a></h3>
+		<dl class="small">
+						<dt>
+				<a href="../cb_common/PEAR.html#methodPEAR">PEAR::PEAR()</a>
+			</dt>
+			<dd>
+				Constructor.
+			</dd>
+					<dt>
+				<a href="../cb_common/PEAR.html#methoddelExpect">PEAR::delExpect()</a>
+			</dt>
+			<dd>
+				This method deletes all occurences of the specified element from the expected error codes stack.
+			</dd>
+					<dt>
+				<a href="../cb_common/PEAR.html#methodexpectError">PEAR::expectError()</a>
+			</dt>
+			<dd>
+				This method is used to tell which errors you expect to get.
+			</dd>
+					<dt>
+				<a href="../cb_common/PEAR.html#methodgetStaticProperty">PEAR::getStaticProperty()</a>
+			</dt>
+			<dd>
+				If you have a class that's mostly/entirely static, and you need static properties, you can use this method to simulate them. Eg.
+			</dd>
+					<dt>
+				<a href="../cb_common/PEAR.html#methodisError">PEAR::isError()</a>
+			</dt>
+			<dd>
+				Tell whether a value is a PEAR error.
+			</dd>
+					<dt>
+				<a href="../cb_common/PEAR.html#methodloadExtension">PEAR::loadExtension()</a>
+			</dt>
+			<dd>
+				OS independant PHP extension load.
+			</dd>
+					<dt>
+				<a href="../cb_common/PEAR.html#methodpopErrorHandling">PEAR::popErrorHandling()</a>
+			</dt>
+			<dd>
+				Pop the last error handler used
+			</dd>
+					<dt>
+				<a href="../cb_common/PEAR.html#methodpopExpect">PEAR::popExpect()</a>
+			</dt>
+			<dd>
+				This method pops one element off the expected error codes stack.
+			</dd>
+					<dt>
+				<a href="../cb_common/PEAR.html#methodpushErrorHandling">PEAR::pushErrorHandling()</a>
+			</dt>
+			<dd>
+				Push a new error handler on top of the error handler options stack.
+			</dd>
+					<dt>
+				<a href="../cb_common/PEAR.html#methodraiseError">PEAR::raiseError()</a>
+			</dt>
+			<dd>
+				This method is a wrapper that returns an instance of the configured error class with this object's default error handling applied.
+			</dd>
+					<dt>
+				<a href="../cb_common/PEAR.html#methodregisterShutdownFunc">PEAR::registerShutdownFunc()</a>
+			</dt>
+			<dd>
+				Use this function to register a shutdown method for static classes.
+			</dd>
+					<dt>
+				<a href="../cb_common/PEAR.html#methodsetErrorHandling">PEAR::setErrorHandling()</a>
+			</dt>
+			<dd>
+				Sets how errors generated by this DB object should be handled.
+			</dd>
+					<dt>
+				<a href="../cb_common/PEAR.html#method_PEAR">PEAR::_PEAR()</a>
+			</dt>
+			<dd>
+				Destructor (the emulated type of...).
+			</dd>
+				</dl>
+		</div>
+		</div>
+	<br clear="all">
+	<hr>
+
+	<a name="class_details"></a>
+	<h2>Class Details</h2>
+	<p align="center"><strong>Class to beautify php code
+</strong></p>
+
+<h4>Tags:</h4>
+<ul>
+	<li><b>author</b> - Stig Bakken &lt;<a href="mailto:ssb@fast.no">ssb@fast.no</a>&gt;</li>
+</ul>	<p class="small" style="color: #334B66;">[ <a href="#top">Top</a> ]</p>
+
+	<hr>
+	<a name="class_vars"></a>
+	<h2>Class Variables</h2>
+		<a name="var$braces"></a>
+	<p></p>
+	<h4>$braces = <span class="value">BEAUT_BRACES_PEAR</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 86]</p>
+		<p align="center"><strong>Type of braces parse.
+</strong></p>
+<p>Can be BEAUT_BRACES_PEAR or BEAUT_BRACES_C</p>
+<h4>Tags:</h4>
+<ul>
+</ul>		<p><b>Type:</b> int</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$del_line"></a>
+	<p></p>
+	<h4>$del_line = <span class="value">FALSE</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 76]</p>
+		<p align="center"><strong>If true, delete empty lines
+</strong></p>
+
+<h4>Tags:</h4>
+<ul>
+</ul>		<p><b>Type:</b> bool</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$file"></a>
+	<p></p>
+	<h4>$file = <span class="value"></span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 91]</p>
+		<p align="center"><strong>Name of the file to read.
+</strong></p>
+<p>Can be &quot;php://stdin&quot;.</p>
+<h4>Tags:</h4>
+<ul>
+</ul>		<p><b>Type:</b> string</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$find_functions"></a>
+	<p></p>
+	<h4>$find_functions = <span class="value">false</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 96]</p>
+		<p align="center"><strong>Find and list the functions at the beggining of the script
+</strong></p>
+
+<h4>Tags:</h4>
+<ul>
+</ul>		<p><b>Type:</b> bool</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$highlight"></a>
+	<p></p>
+	<h4>$highlight = <span class="value">FALSE</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 81]</p>
+		<p align="center"><strong>Highlight for the html version of the beautify code
+</strong></p>
+
+<h4>Tags:</h4>
+<ul>
+</ul>		<p><b>Type:</b> bool</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$indent_long_comments"></a>
+	<p></p>
+	<h4>$indent_long_comments = <span class="value">false</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 109]</p>
+		<p align="center"><strong>Indent the long comments.
+</strong></p>
+<p>Add a space to all long comment lines so, the text start in the column of the * Idea of Michael H.E. Roth &lt;mher@users.sourceforge.net&gt;</p>
+<h4>Tags:</h4>
+<ul>
+</ul>		<p><b>Type:</b> bool</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$indent_width"></a>
+	<p></p>
+	<h4>$indent_width = <span class="value">4</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 61]</p>
+		<p align="center"><strong>Spaces to indent
+</strong></p>
+
+<h4>Tags:</h4>
+<ul>
+</ul>		<p><b>Type:</b> int</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$max"></a>
+	<p></p>
+	<h4>$max = <span class="value">40</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 71]</p>
+		<p align="center"><strong>Max chars per line, if <a href="../php_beautify/phpBeautify.html#var$max_line">$max_line</a> is true
+</strong></p>
+
+<h4>Tags:</h4>
+<ul>
+</ul>		<p><b>Type:</b> int</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$max_line"></a>
+	<p></p>
+	<h4>$max_line = <span class="value">FALSE</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 66]</p>
+		<p align="center"><strong>Wrap or not the code at line defined by <a href="../php_beautify/phpBeautify.html#var$max">$max</a>
+</strong></p>
+
+<h4>Tags:</h4>
+<ul>
+</ul>		<p><b>Type:</b> bool</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$verify"></a>
+	<p></p>
+	<h4>$verify = <span class="value">true</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 101]</p>
+		<p align="center"><strong>Verify the integrity of the beautify version
+</strong></p>
+
+<h4>Tags:</h4>
+<ul>
+</ul>		<p><b>Type:</b> bool</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$version"></a>
+	<p></p>
+	<h4>$version = <span class="value">BEAUT_VERSION</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 111]</p>
+		
+<h4>Tags:</h4>
+<ul>
+</ul>		<p><b>Type:</b> mixed</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+
+	<hr>
+	<a name="class_methods"></a>
+	<h2>Class Methods</h2>
+		<a name="methodphpBeautify"></a>
+	<p></p>
+	<h3>phpBeautify</h3>
+	<div class="indent">
+		<p>
+		<code>void phpBeautify(
+array
+$settings)</code>
+		</p>
+	
+		<p class="linenumber">[line 200]</p>
+		<p align="center"><strong>Constructor Create a phpBeautify object, based on an array of settings.
+</strong></p>
+<p>This array have the keys for the names of the public variables of the class.</p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>author</b> - Claudio Bustos</li>
+</ul>		
+
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">array</span>
+		<b>$settings</b> 
+		- 
+		an array of settings</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodbeautify"></a>
+	<p></p>
+	<h3>beautify</h3>
+	<div class="indent">
+		<p>
+		<code>mixed beautify(
+)</code>
+		</p>
+	
+		<p class="linenumber">[line 249]</p>
+		<p align="center"><strong>Returns a string with the beautify php code.
+</strong></p>
+<p>To get a Html version of the code, use toHtml()</p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - you can obtain the string with the code or a PEAR_ERROR is something bad happens.</li>
+</ul>		
+
+	<h4>Parameters:</h4>
+	<ul>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodgetVersion"></a>
+	<p></p>
+	<h3>getVersion</h3>
+	<div class="indent">
+		<p>
+		<code>string getVersion(
+)</code>
+		</p>
+	
+		<p class="linenumber">[line 241]</p>
+		<p align="center"><strong>Returns the Version of the program
+</strong></p>
+
+<h4>Tags:</h4>
+<ul>
+</ul>		
+
+	<h4>Parameters:</h4>
+	<ul>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodtoHTML"></a>
+	<p></p>
+	<h3>toHTML</h3>
+	<div class="indent">
+		<p>
+		<code>void toHTML(
+)</code>
+		</p>
+	
+		<p class="linenumber">[line 265]</p>
+		<p align="center"><strong>Send to the screen the phpCode in HTML format (how I say that in english?) Dependly of <a href="../php_beautify/phpBeautify.html#var$highlight">$highlight</a>, you get a pure text version or with colors.
+</strong></p>
+<p>To get a string with the code, use <a href="../php_beautify/phpBeautify.html#methodbeautify">beautify()</a></p>
+<h4>Tags:</h4>
+<ul>
+</ul>		
+
+	<h4>Parameters:</h4>
+	<ul>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="method_findfunctions"></a>
+	<p></p>
+	<h3>_findfunctions</h3>
+	<div class="indent">
+		<p>
+		<code>void _findfunctions(
+string
+&$rs)</code>
+		</p>
+	
+		<p class="linenumber">[line 768]</p>
+		<p align="center"><strong>A function that list the functions (redundance rules!) inside the file
+</strong></p>
+<p>When the var find_functions is set to TRUE this function return the functions in the file and put it on the begining</p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>author</b> - Jay Schauer - Claudio Bustos (Adaptation)</li>
+</ul>		
+
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">string</span>
+		<b>&$rs</b> 
+		- 
+		the beautified code</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+</div>
+	<div id="credit">
+		<hr>
+		Documention generated on Thu,  6 Mar 2003 08:28:36 -0700 by <a href="http://www.phpdoc.org">phpDocumentor 1.2.0rc1</a>
+	</div>
+</div>
+</body>
+</html>

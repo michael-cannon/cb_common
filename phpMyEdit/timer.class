@@ -1,0 +1,45 @@
+<?php
+/*
+   This is a generic timer class.
+
+   version 0.1 - 18-Jun-01
+
+   Written by Jim Kraai (JimKraai@Polytopic.com)
+
+   $Platon: phpMyEdit/timer.class,v 1.4 2002/10/17 21:06:46 nepto Exp $
+ */
+
+class timerClass
+{
+	var $startTime;
+	var $started;
+
+	function timerClass($start=true) {
+		$this->started = false;
+		if ($start)
+			$this->start();
+	}
+
+	function start() {
+		$startMtime = explode(' ',microtime());
+		$this->startTime = (double)($startMtime[0])+(double)($startMtime[1]);
+		$this->started = true;
+	}
+
+	function end($iterations=1) {
+		// get the time, check whether the timer was started later
+		$endMtime = explode(' ',microtime());
+		if ($this->started) {
+			$endTime = (double)($endMtime[0])+(double)($endMtime[1]);
+			$dur = $endTime - $this->startTime;
+			$avg = 1000*$dur/$iterations;
+			$avg = round(1000*$avg)/1000;
+			return "$avg milliseconds";
+		} else {
+			return "timer not started";
+		}
+	}
+
+}
+
+?>

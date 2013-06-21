@@ -1,0 +1,50 @@
+<!-- $Platon: phpMyEdit/doc/sgml/introduction.sgml,v 1.1 2002/11/03 23:47:00 nepto Exp $ -->
+
+<chapter id="introduction">
+<title>Introduction</title>
+
+<sect1 id="introduction.overview">
+<title id="introduction.overview.title">Overview</title>
+<para>
+
+How many times have you hand coded a MySQL table editor in PHP?  &name;
+application provides an instant table editor.
+
+</para>
+<para>
+    
+phpMyEdit generates PHP code for displaying/editing MySQL tables in HTML. All
+you need to do is to write a simple calling program (a utility to do this is
+included). It includes a huge set of table manipulation functions (record
+adition, change, view, copy, and remove), table sorting, filtering, table
+lookups, and more.
+
+</para>
+</sect1>
+
+<sect1 id="introduction.features">
+<title id="introduction.features.title">Features</title>
+<para>
+
+TODO
+
+</para>
+</sect1>
+
+<sect1 id="introduction.requirements">
+<title id="introduction.requirements.title">Requirements</title>
+<para>
+
+TODO
+<!--
+&name; requires PHP interpreter without any special modules. It is
+developed with with PHP 4.10.0. Although I haven't tested it, it should work
+also with another versions of PHP, even PHP 3.x.x. Please notice me about
+particular compatibility capabilities.
+-->
+
+</para>
+</sect1>
+
+</chapter>
+

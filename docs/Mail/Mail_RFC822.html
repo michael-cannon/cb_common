@@ -1,0 +1,507 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<title>Docs For Class Mail_RFC822</title>
+	<link rel="stylesheet" type="text/css" id="layout" href="../media/layout.css">
+	<link rel="stylesheet" type="text/css" href="../media/style.css">
+</head>
+
+<body>
+<div id="header">
+	<div id="navLinks">
+		[ <a href="../classtrees_Mail.html">Class Tree: Mail</a> ]
+		[ <a href="../elementindex_Mail.html">Index: Mail</a> ]
+		[ <a href="../elementindex.html">All elements</a> ]
+	</div>
+	<div id="packagePosition">
+		<div id="packageTitle2">Mail</div>
+		<div id="packageTitle">Mail</div>
+		<div id="elementPath"> &middot; </div>
+	</div>
+</div>
+
+<div id="nav" class="small">
+	<div id="ric">
+					<p><a href="../ric_INSTALL.html">INSTALL</a></p>
+					<p><a href="../ric_ChangeLog.html">ChangeLog</a></p>
+					<p><a href="../ric_README.html">README</a></p>
+			</div>
+	<div id="todolist">
+			<p><a href="../todolist.html">Todo List</a></p>
+	</div>
+	<div id="packages">
+		Packages:
+					<p><a href="../li_cb_common.html">cb_common</a></p>
+					<p><a href="../li_Mail.html">Mail</a></p>
+					<p><a href="../li_php_beautify.html">php_beautify</a></p>
+			</div>
+
+				<div id="index">
+			<div id="files">
+								Files:<br>
+								<a href="../Mail/_common_htmlMimeMail_mimePart_php.html">		mimePart.php
+		</a><br>
+			<a href="../Mail/_common_htmlMimeMail_RFC822_php.html">		RFC822.php
+		</a><br>
+				</div>
+			<div id="classes">
+				Classes:<br>
+								<a href="../Mail/Mail_mimePart.html">		Mail_mimePart
+		</a><br>
+			<a href="../Mail/Mail_RFC822.html">		Mail_RFC822
+		</a><br>
+				</div>
+		</div>
+	</div>
+
+<div id="body">
+			<h1>Class: Mail_RFC822</h1>
+	<p style="margin: 0px;">Source Location: Program_Root/htmlMimeMail/RFC822.php</p>
+	
+
+<div class="leftcol">
+	<h3><a href="#class_details">Class Overview</a> <span class="smalllinenumber">[line 24]</span></h3>
+	<div id="classTree"><pre></pre>
+</div>
+	<div class="small">
+	<p>RFC 822 Email address list validation Utility</p>
+		<h4>Author(s):</h4>
+	<ul>
+																		</ul>
+	<h4>Version:</h4>
+	<ul>
+																		</ul>
+
+	<h4>Copyright:</h4>
+	<ul>
+																		</li>
+	</div>
+</div>
+
+<div class="middlecol">
+	<h3><a href="#class_vars">Variables</a></h3>
+	<ul class="small">
+				<li><a href="../Mail/Mail_RFC822.html#var$address">$address</a></li>
+				<li><a href="../Mail/Mail_RFC822.html#var$addresses">$addresses</a></li>
+				<li><a href="../Mail/Mail_RFC822.html#var$default_domain">$default_domain</a></li>
+				<li><a href="../Mail/Mail_RFC822.html#var$error">$error</a></li>
+				<li><a href="../Mail/Mail_RFC822.html#var$index">$index</a></li>
+				<li><a href="../Mail/Mail_RFC822.html#var$limit">$limit</a></li>
+				<li><a href="../Mail/Mail_RFC822.html#var$mailRFC822">$mailRFC822</a></li>
+				<li><a href="../Mail/Mail_RFC822.html#var$nestGroups">$nestGroups</a></li>
+				<li><a href="../Mail/Mail_RFC822.html#var$num_groups">$num_groups</a></li>
+				<li><a href="../Mail/Mail_RFC822.html#var$structure">$structure</a></li>
+				<li><a href="../Mail/Mail_RFC822.html#var$validate">$validate</a></li>
+			</ul>
+</div>
+<div class="rightcol">
+	<h3><a href="#class_methods">Methods</a></h3>
+	<ul class="small">
+				<li><a href="../Mail/Mail_RFC822.html#methodMail_RFC822">Mail_RFC822</a></li>
+				<li><a href="../Mail/Mail_RFC822.html#methodapproximateCount">approximateCount</a></li>
+				<li><a href="../Mail/Mail_RFC822.html#methodisValidInetAddress">isValidInetAddress</a></li>
+				<li><a href="../Mail/Mail_RFC822.html#methodparseAddressList">parseAddressList</a></li>
+				<li><a href="../Mail/Mail_RFC822.html#methodvalidateMailbox">validateMailbox</a></li>
+			</ul>
+</div>
+
+<div id="content">
+<hr>
+	<div class="contents">
+	</div>
+
+	<div class="leftCol">
+	<h2>Inherited Variables</h2>
+		</div>
+
+	<div class="rightCol">
+	<h2>Inherited Methods</h2>
+		</div>
+	<br clear="all">
+	<hr>
+
+	<a name="class_details"></a>
+	<h2>Class Details</h2>
+	<p align="center"><strong>RFC 822 Email address list validation Utility
+</strong></p>
+<p>What is it?</p><p>This class will take an address string, and parse it into it's consituent parts, be that either addresses, groups, or combinations. Nested groups are not supported. The structure it returns is pretty straight forward, and is similar to that provided by the imap_rfc822_parse_adrlist(). Use print_r() to view the structure.</p><p>How do I use it?</p><p>$address_string = 'My Group: &quot;Richard Heyes&quot; &lt;richard@localhost&gt; (A comment), ted@example.com (Ted Bloggs), Barney;'; $structure = Mail_RFC822::parseAddressList($address_string, 'example.com', TRUE) print_r($structure);</p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>version</b> - $Revision: 1.1.1.1 $</li>
+	<li><b>author</b> - Chuck Hagenbuch &lt;<a href="mailto:chuck@horde.org">chuck@horde.org</a>&gt;</li>
+	<li><b>author</b> - Richard Heyes &lt;<a href="mailto:richard@phpguru.org">richard@phpguru.org</a>&gt;</li>
+</ul>	<p class="small" style="color: #334B66;">[ <a href="#top">Top</a> ]</p>
+
+	<hr>
+	<a name="class_vars"></a>
+	<h2>Class Variables</h2>
+		<a name="var$address"></a>
+	<p></p>
+	<h4>$address = <span class="value"></span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 30]</p>
+		<p align="center"><strong>The address being parsed by the RFC822 object.
+</strong></p>
+
+<h4>Tags:</h4>
+<ul>
+	<li><b>var</b> - $address</li>
+</ul>		<p><b>Type:</b> string</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$addresses"></a>
+	<p></p>
+	<h4>$addresses = <span class="value">array()</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 54]</p>
+		<p align="center"><strong>The array of raw addresses built up as we parse.
+</strong></p>
+
+<h4>Tags:</h4>
+<ul>
+	<li><b>var</b> - $addresses</li>
+</ul>		<p><b>Type:</b> array</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$default_domain"></a>
+	<p></p>
+	<h4>$default_domain = <span class="value">localhost</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 36]</p>
+		<p align="center"><strong>The default domain to use for unqualified addresses.
+</strong></p>
+
+<h4>Tags:</h4>
+<ul>
+	<li><b>var</b> - $default_domain</li>
+</ul>		<p><b>Type:</b> string</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$error"></a>
+	<p></p>
+	<h4>$error = <span class="value">null</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 66]</p>
+		<p align="center"><strong>The current error message, if any.
+</strong></p>
+
+<h4>Tags:</h4>
+<ul>
+	<li><b>var</b> - $error</li>
+</ul>		<p><b>Type:</b> string</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$index"></a>
+	<p></p>
+	<h4>$index = <span class="value">null</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 72]</p>
+		<p align="center"><strong>An internal counter/pointer.
+</strong></p>
+
+<h4>Tags:</h4>
+<ul>
+	<li><b>var</b> - $index</li>
+</ul>		<p><b>Type:</b> integer</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$limit"></a>
+	<p></p>
+	<h4>$limit = <span class="value">null</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 92]</p>
+		<p align="center"><strong>A limit after which processing stops
+</strong></p>
+
+<h4>Tags:</h4>
+<ul>
+	<li><b>var</b> - $limit</li>
+</ul>		<p><b>Type:</b> int</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$mailRFC822"></a>
+	<p></p>
+	<h4>$mailRFC822 = <span class="value">true</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 86]</p>
+		<p align="center"><strong>A variable so that we can tell whether or not we're inside a Mail_RFC822 object.
+</strong></p>
+
+<h4>Tags:</h4>
+<ul>
+	<li><b>var</b> - $mailRFC822</li>
+</ul>		<p><b>Type:</b> boolean</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$nestGroups"></a>
+	<p></p>
+	<h4>$nestGroups = <span class="value">true</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 42]</p>
+		<p align="center"><strong>Should we return a nested array showing groups, or flatten everything?
+</strong></p>
+
+<h4>Tags:</h4>
+<ul>
+	<li><b>var</b> - $nestGroups</li>
+</ul>		<p><b>Type:</b> boolean</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$num_groups"></a>
+	<p></p>
+	<h4>$num_groups = <span class="value">0</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 79]</p>
+		<p align="center"><strong>The number of groups that have been found in the address list.
+</strong></p>
+
+<h4>Tags:</h4>
+<ul>
+	<li><b>var</b> - $num_groups</li>
+	<li><b>access</b> - public</li>
+</ul>		<p><b>Type:</b> integer</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$structure"></a>
+	<p></p>
+	<h4>$structure = <span class="value">array()</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 60]</p>
+		<p align="center"><strong>The final array of parsed address information that we build up.
+</strong></p>
+
+<h4>Tags:</h4>
+<ul>
+	<li><b>var</b> - $structure</li>
+</ul>		<p><b>Type:</b> array</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$validate"></a>
+	<p></p>
+	<h4>$validate = <span class="value">true</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 48]</p>
+		<p align="center"><strong>Whether or not to validate atoms for non-ascii characters.
+</strong></p>
+
+<h4>Tags:</h4>
+<ul>
+	<li><b>var</b> - $validate</li>
+</ul>		<p><b>Type:</b> boolean</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+
+	<hr>
+	<a name="class_methods"></a>
+	<h2>Class Methods</h2>
+		<a name="methodMail_RFC822"></a>
+	<p></p>
+	<h3>Mail_RFC822</h3>
+	<div class="indent">
+		<p>
+		<code>Mail_RFC822 Mail_RFC822(
+[string
+$address = null], [string
+$default_domain = null], [boolean
+$nest_groups = null], [boolean
+$validate = null], [mixed
+$limit = null])</code>
+		</p>
+	
+		<p class="linenumber">[line 107]</p>
+		<p align="center"><strong>Sets up the object. The address must either be set here or when calling parseAddressList().
+</strong></p>
+<p>One or the other.</p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - A new Mail_RFC822 object.</li>
+	<li><b>access</b> - public</li>
+</ul>		
+
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">string</span>
+		<b>$address</b> 
+		- 
+		The address(es) to validate.</li>
+			<li>
+		<span class="type">string</span>
+		<b>$default_domain</b> 
+		- 
+		Default domain/host etc. If not supplied, will be set to localhost.</li>
+			<li>
+		<span class="type">boolean</span>
+		<b>$nest_groups</b> 
+		- 
+		Whether to return the structure with groups nested for easier viewing.</li>
+			<li>
+		<span class="type">boolean</span>
+		<b>$validate</b> 
+		- 
+		Whether to validate atoms. Turn this off if you need to run addresses through before encoding the personal names, for instance.</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodapproximateCount"></a>
+	<p></p>
+	<h3>approximateCount</h3>
+	<div class="indent">
+		<p>
+		<code>int approximateCount(
+string
+$data)</code>
+		</p>
+	
+		<p class="linenumber">[line 842]</p>
+		<p align="center"><strong>Returns an approximate count of how many addresses are
+</strong></p>
+<p>in the given string. This is APPROXIMATE as it only splits based on a comma which has no preceding backslash. Could be useful as large amounts of addresses will end up producing *large* structures when used with parseAddressList().</p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - Approximate count</li>
+</ul>		
+
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">string</span>
+		<b>$data</b> 
+		- 
+		Addresses to count</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodisValidInetAddress"></a>
+	<p></p>
+	<h3>isValidInetAddress</h3>
+	<div class="indent">
+		<p>
+		<code>mixed isValidInetAddress(
+string
+$data, [boolean
+$strict = false])</code>
+		</p>
+	
+		<p class="linenumber">[line 860]</p>
+		<p align="center"><strong>This is a email validating function seperate to the rest
+</strong></p>
+<p>of the class. It simply validates whether an email is of the common internet form: &lt;user&gt;@&lt;domain&gt;. This can be sufficient for most people. Optional stricter mode can be utilised which restricts mailbox characters allowed to alphanumeric, full stop, hyphen and underscore.</p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - False if it fails, an indexed array                          username/domain if it matches</li>
+</ul>		
+
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">string</span>
+		<b>$data</b> 
+		- 
+		Address to check</li>
+			<li>
+		<span class="type">boolean</span>
+		<b>$strict</b> 
+		- 
+		Optional stricter mode</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodparseAddressList"></a>
+	<p></p>
+	<h3>parseAddressList</h3>
+	<div class="indent">
+		<p>
+		<code>array parseAddressList(
+[string
+$address = null], [string
+$default_domain = null], [boolean
+$nest_groups = null], [boolean
+$validate = null], [mixed
+$limit = null])</code>
+		</p>
+	
+		<p class="linenumber">[line 129]</p>
+		<p align="center"><strong>Starts the whole process. The address must either be set here or when creating the object.
+</strong></p>
+<p>One or the other.</p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - A structured array of addresses.</li>
+	<li><b>access</b> - public</li>
+</ul>		
+
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">string</span>
+		<b>$address</b> 
+		- 
+		The address(es) to validate.</li>
+			<li>
+		<span class="type">string</span>
+		<b>$default_domain</b> 
+		- 
+		Default domain/host etc.</li>
+			<li>
+		<span class="type">boolean</span>
+		<b>$nest_groups</b> 
+		- 
+		Whether to return the structure with groups nested for easier viewing.</li>
+			<li>
+		<span class="type">boolean</span>
+		<b>$validate</b> 
+		- 
+		Whether to validate atoms. Turn this off if you need to run addresses through before encoding the personal names, for instance.</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodvalidateMailbox"></a>
+	<p></p>
+	<h3>validateMailbox</h3>
+	<div class="indent">
+		<p>
+		<code>boolean validateMailbox(
+string
+&$mailbox)</code>
+		</p>
+	
+		<p class="linenumber">[line 561]</p>
+		<p align="center"><strong>Function to validate a mailbox, which is:
+</strong></p>
+<p>mailbox =   addr-spec         ; simple address           / phrase route-addr ; name and route-addr</p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - Success or failure.</li>
+	<li><b>access</b> - public</li>
+</ul>		
+
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">string</span>
+		<b>&$mailbox</b> 
+		- 
+		The string to check.</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+</div>
+	<div id="credit">
+		<hr>
+		Documention generated on Thu,  6 Mar 2003 08:28:57 -0700 by <a href="http://www.phpdoc.org">phpDocumentor 1.2.0rc1</a>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,305 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<title>Docs For Class Mail_mimePart</title>
+	<link rel="stylesheet" type="text/css" id="layout" href="../media/layout.css">
+	<link rel="stylesheet" type="text/css" href="../media/style.css">
+</head>
+
+<body>
+<div id="header">
+	<div id="navLinks">
+		[ <a href="../classtrees_Mail.html">Class Tree: Mail</a> ]
+		[ <a href="../elementindex_Mail.html">Index: Mail</a> ]
+		[ <a href="../elementindex.html">All elements</a> ]
+	</div>
+	<div id="packagePosition">
+		<div id="packageTitle2">Mail</div>
+		<div id="packageTitle">Mail</div>
+		<div id="elementPath"> &middot; </div>
+	</div>
+</div>
+
+<div id="nav" class="small">
+	<div id="ric">
+					<p><a href="../ric_INSTALL.html">INSTALL</a></p>
+					<p><a href="../ric_ChangeLog.html">ChangeLog</a></p>
+					<p><a href="../ric_README.html">README</a></p>
+			</div>
+	<div id="todolist">
+			<p><a href="../todolist.html">Todo List</a></p>
+	</div>
+	<div id="packages">
+		Packages:
+					<p><a href="../li_cb_common.html">cb_common</a></p>
+					<p><a href="../li_Mail.html">Mail</a></p>
+					<p><a href="../li_php_beautify.html">php_beautify</a></p>
+			</div>
+
+				<div id="index">
+			<div id="files">
+								Files:<br>
+								<a href="../Mail/_common_htmlMimeMail_mimePart_php.html">		mimePart.php
+		</a><br>
+			<a href="../Mail/_common_htmlMimeMail_RFC822_php.html">		RFC822.php
+		</a><br>
+				</div>
+			<div id="classes">
+				Classes:<br>
+								<a href="../Mail/Mail_mimePart.html">		Mail_mimePart
+		</a><br>
+			<a href="../Mail/Mail_RFC822.html">		Mail_RFC822
+		</a><br>
+				</div>
+		</div>
+	</div>
+
+<div id="body">
+			<h1>Class: Mail_mimePart</h1>
+	<p style="margin: 0px;">Source Location: Program_Root/htmlMimeMail/mimePart.php</p>
+	
+
+<div class="leftcol">
+	<h3><a href="#class_details">Class Overview</a> <span class="smalllinenumber">[line 77]</span></h3>
+	<div id="classTree"><pre></pre>
+</div>
+	<div class="small">
+	<p>Raw mime encoding class</p>
+		<h4>Author(s):</h4>
+	<ul>
+													</ul>
+	<h4>Version:</h4>
+	<ul>
+													</ul>
+
+	<h4>Copyright:</h4>
+	<ul>
+													</li>
+	</div>
+</div>
+
+<div class="middlecol">
+	<h3><a href="#class_vars">Variables</a></h3>
+	<ul class="small">
+				<li><a href="../Mail/Mail_mimePart.html#var$_body">$_body</a></li>
+				<li><a href="../Mail/Mail_mimePart.html#var$_encoded">$_encoded</a></li>
+				<li><a href="../Mail/Mail_mimePart.html#var$_encoding">$_encoding</a></li>
+				<li><a href="../Mail/Mail_mimePart.html#var$_headers">$_headers</a></li>
+				<li><a href="../Mail/Mail_mimePart.html#var$_subparts">$_subparts</a></li>
+			</ul>
+</div>
+<div class="rightcol">
+	<h3><a href="#class_methods">Methods</a></h3>
+	<ul class="small">
+				<li><a href="../Mail/Mail_mimePart.html#methodMail_mimePart">Mail_mimePart</a></li>
+				<li><a href="../Mail/Mail_mimePart.html#methodaddSubPart">addSubPart</a></li>
+				<li><a href="../Mail/Mail_mimePart.html#methodencode">encode</a></li>
+			</ul>
+</div>
+
+<div id="content">
+<hr>
+	<div class="contents">
+	</div>
+
+	<div class="leftCol">
+	<h2>Inherited Variables</h2>
+		</div>
+
+	<div class="rightCol">
+	<h2>Inherited Methods</h2>
+		</div>
+	<br clear="all">
+	<hr>
+
+	<a name="class_details"></a>
+	<h2>Class Details</h2>
+	<p align="center"><strong>Raw mime encoding class
+</strong></p>
+<p>What is it?   This class enables you to manipulate and build   a mime email from the ground up.</p><p>Why use this instead of mime.php?   mime.php is a userfriendly api to this class for   people who aren't interested in the internals of   mime mail. This class however allows full control   over the email.</p><p>Eg.</p><p>// Since multipart/mixed has no real body, (the body is // the subpart), we set the body argument to blank.</p><p>$params['content_type'] = 'multipart/mixed'; $email = new Mail_mimePart('', $params);</p><p>// Here we add a text part to the multipart we have // already. Assume $body contains plain text.</p><p>$params['content_type'] = 'text/plain'; $params['encoding']     = '7bit'; $text = $email-&gt;addSubPart($body, $params);</p><p>// Now add an attachment. Assume $attach is the contents of the attachment</p><p>$params['content_type'] = 'application/zip'; $params['encoding']     = 'base64'; $params['disposition']  = 'attachment'; $params['dfilename']    = 'example.zip'; $attach =&amp; $email-&gt;addSubPart($body, $params);</p><p>// Now build the email. Note that the encode // function returns an associative array containing two // elements, body and headers. You will need to add extra // headers, (eg. Mime-Version) before sending.</p><p>$email = $message-&gt;encode(); $email['headers'][] = 'Mime-Version: 1.0';</p><p>Further examples are available at http://www.phpguru.org</p><p>TODO:</p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>version</b> - $Revision: 1.1.1.1 $</li>
+	<li><b>author</b> - Richard Heyes &lt;<a href="mailto:richard@phpguru.org">richard@phpguru.org</a>&gt;</li>
+</ul>	<p class="small" style="color: #334B66;">[ <a href="#top">Top</a> ]</p>
+
+	<hr>
+	<a name="class_vars"></a>
+	<h2>Class Variables</h2>
+		<a name="var$_body"></a>
+	<p></p>
+	<h4>$_body = <span class="value"></span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 107]</p>
+		<p align="center"><strong>The body of this part (not encoded)
+</strong></p>
+
+<h4>Tags:</h4>
+<ul>
+</ul>		<p><b>Type:</b> string</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$_encoded"></a>
+	<p></p>
+	<h4>$_encoded = <span class="value"></span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 95]</p>
+		<p align="center"><strong>The output of this part after being built
+</strong></p>
+
+<h4>Tags:</h4>
+<ul>
+</ul>		<p><b>Type:</b> string</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$_encoding"></a>
+	<p></p>
+	<h4>$_encoding = <span class="value"></span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 83]</p>
+		<p align="center"><strong>The encoding type of this part
+</strong></p>
+
+<h4>Tags:</h4>
+<ul>
+</ul>		<p><b>Type:</b> string</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$_headers"></a>
+	<p></p>
+	<h4>$_headers = <span class="value"></span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 101]</p>
+		<p align="center"><strong>Headers for this part
+</strong></p>
+
+<h4>Tags:</h4>
+<ul>
+</ul>		<p><b>Type:</b> array</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$_subparts"></a>
+	<p></p>
+	<h4>$_subparts = <span class="value"></span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 89]</p>
+		<p align="center"><strong>An array of subparts
+</strong></p>
+
+<h4>Tags:</h4>
+<ul>
+</ul>		<p><b>Type:</b> array</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+
+	<hr>
+	<a name="class_methods"></a>
+	<h2>Class Methods</h2>
+		<a name="methodMail_mimePart"></a>
+	<p></p>
+	<h3>Mail_mimePart</h3>
+	<div class="indent">
+		<p>
+		<code>void Mail_mimePart(
+[$body
+$body = ''], [$params
+$params = array()])</code>
+		</p>
+	
+		<p class="linenumber">[line 125]</p>
+		<p align="center"><strong>Constructor.
+</strong></p>
+<p>Sets up the object.</p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>access</b> - public</li>
+</ul>		
+
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">$body</span>
+		<b>$body</b> 
+		- 
+		- The body of the mime part if any.</li>
+			<li>
+		<span class="type">$params</span>
+		<b>$params</b> 
+		- 
+		- An associative array of parameters:                   content_type - The content type for this part eg multipart/mixed                   encoding     - The encoding to use, 7bit, 8bit, base64, or quoted-printable                   cid          - Content ID to apply                   disposition  - Content disposition, inline or attachment                   dfilename    - Optional filename parameter for content disposition                   description  - Content description                   charset      - Character set to use</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodaddSubPart"></a>
+	<p></p>
+	<h3>addSubPart</h3>
+	<div class="indent">
+		<p>
+		<code>A &amp;addSubPart(
+$body
+$body, $params
+$params)</code>
+		</p>
+	
+		<p class="linenumber">[line 247]</p>
+		<p align="center"><strong>&amp;addSubPart()
+</strong></p>
+<p>Adds a subpart to current mime part and returns a reference to it</p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - reference to the part you just added. It is          crucial if using multipart/* in your subparts that          you use =&amp; in your script when calling this function,          otherwise you will not be able to add further subparts.</li>
+	<li><b>access</b> - public</li>
+</ul>		
+
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">$params</span>
+		<b>$params</b> 
+		- 
+		The parameters for the subpart, same                 as the  argument for constructor.</li>
+			<li>
+		<span class="type">$body</span>
+		<b>$body</b> 
+		- 
+		The body of the subpart, if any.</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodencode"></a>
+	<p></p>
+	<h3>encode</h3>
+	<div class="indent">
+		<p>
+		<code>An encode(
+)</code>
+		</p>
+	
+		<p class="linenumber">[line 199]</p>
+		<p align="center"><strong>encode()
+</strong></p>
+<p>Encodes and returns the email. Also stores it in the encoded member variable</p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - associative array containing two elements,          body and headers. The headers element is itself          an indexed array.</li>
+	<li><b>access</b> - public</li>
+</ul>		
+
+	<h4>Parameters:</h4>
+	<ul>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+</div>
+	<div id="credit">
+		<hr>
+		Documention generated on Thu,  6 Mar 2003 08:28:49 -0700 by <a href="http://www.phpdoc.org">phpDocumentor 1.2.0rc1</a>
+	</div>
+</div>
+</body>
+</html>

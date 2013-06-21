@@ -1,0 +1,59 @@
+<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook V3.1//EN"[
+	<!ENTITY % defs                 SYSTEM "defs.sgml">
+	%defs;
+
+	<!ENTITY introduction 			SYSTEM "introduction.sgml">
+	<!ENTITY installation			SYSTEM "installation.sgml">
+	<!ENTITY configuration			SYSTEM "configuration.sgml">
+	<!ENTITY configuration.general	SYSTEM "configuration.general.sgml">
+	<!ENTITY configuration.fields	SYSTEM "configuration.fields.sgml">
+	<!ENTITY extensions				SYSTEM "extensions.sgml">
+	<!ENTITY other-information		SYSTEM "other-information.sgml">
+]>
+
+<!-- $Platon: phpMyEdit/doc/sgml/phpMyEdit.sgml,v 1.1 2002/11/03 23:47:00 nepto Exp $ -->
+
+<!--
+
+It is always good idea to add 
+	<style>body, p, td { font-family: Verdana; }</style>
+into every generated HTML file. "make documtation" in Makefile will does this
+
+ViM command, which can be used to make particular sed expression:
+:%s/^><HEAD$/><HEAD><style>body, p, td { font-family: Verdana; }<\/style/gc
+
+-->
+
+<book id="index">
+<bookinfo>
+    <date>&date;</date>
+	<title>&name;</title>
+    <abbrev>&name;</abbrev>
+	<subtitle>instant MySQL table editor and code generator</subtitle>
+    <releaseinfo>This document is the user's manual for &name;.</releaseinfo>
+	<authorgroup>
+		<author>
+			<firstname>Ondrej</firstname>
+			<!-- <othername>'Nepto'</othername> -->
+			<surname>Jombik</surname>
+		</author>
+		<author>
+			<firstname>Doug</firstname>
+			<!-- <othername></othername> -->
+			<surname>Hockinson</surname>
+		</author>
+	</authorgroup>
+	<copyright>
+	  <year>2002</year>
+	  <holder>Platon software development group</holder>
+	</copyright>
+</bookinfo>
+
+&introduction;
+&installation;
+&configuration;
+&extensions;
+&other-information;
+
+</book>
+

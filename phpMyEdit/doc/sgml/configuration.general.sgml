@@ -1,0 +1,396 @@
+<!-- $Platon: phpMyEdit/doc/sgml/configuration.general.sgml,v 1.1 2002/11/03 23:47:00 nepto Exp $ -->
+
+<sect2 id="configuration.mysql-options">
+<title id="configuration.mysql-options.title">MySQL connection</title>
+<para>
+
+Various options are configured near the top of the script, most notably the
+database logon which you may want to copy/paste to a separate included file.
+
+</para>
+<para>
+
+MySQL logon options host name, user name, password, database, and table appear
+in the following format.
+
+</para>
+<para>
+
+<example><title>MySQL connection options</title>
+<programlisting><![CDATA[
+$opts['hn'] = 'localhost';
+$opts['un'] = 'username';
+$opts['pw'] = 'password';
+$opts['db'] = 'database';
+$opts['tb'] = 'table';
+]]></programlisting>
+</example>
+
+</para>
+</sect2>
+
+<sect2 id="configuration.unique-key">
+<title id="configuration.unique-key.title">Unique key</title>
+<para>
+
+The unique identifier, or record ID, chosen should appear as something like:
+
+</para>
+<para>
+
+<example><title>Unique key definition</title>
+<programlisting><![CDATA[
+// Name of field which is the unique key
+$opts['key'] = 'id';
+]]></programlisting>
+</example>
+
+</para>
+</sect2>
+
+<sect2 id="configuration.unique-key-type">
+<title id="configuration.unique-key-type.title">Key type</title>
+<para>
+
+The column type of the ID field should appear something like:
+
+</para>
+<para>
+
+<example><title>Unique key type definition</title>
+<programlisting><![CDATA[
+// Type of key field (int/real/string/date etc)
+$opts['key_type'] = 'int';
+]]></programlisting>
+</example>
+
+</para>
+<para>
+
+The argument indicates whether the chosen column type is int, real, string,
+date, etc.
+
+</para>
+</sect2>
+
+<sect2 id="configuration.permission-options">
+<title id="configuration.permission-options.title">Permission options</title>
+<para>
+
+Available user options include: A - Add, C - Change, P - Copy, V - View, D -
+Delete, F - Filter (search), I - Initial sort suppressed.
+
+</para>
+<para>
+
+Full privileges to manipulate records is configured as:
+
+</para>
+<para>
+
+<example><title>Full permissions</title>
+<programlisting><![CDATA[
+$opts['options'] = 'ACPVDF';
+]]></programlisting>
+</example>
+
+</para>
+<para>
+
+To deny the end user the ability to delete records use:
+
+</para>
+<para>
+
+<example><title>Full permissions without delete</title>
+<programlisting><![CDATA[
+$opts['options'] = 'ACPVF';
+]]></programlisting>
+</example>
+
+</para>
+</sect2>
+
+<sect2 id="configuration.displayed-records">
+<title id="configuration.displayed-records.title">Displayed records</title>
+<para>
+
+Controls the number of records displayed on the screen.
+
+</para>
+<para>
+
+<example><title>Displayed records</title>
+<programlisting><![CDATA[
+
+$opts['inc'] = -1; // list all found records
+
+$opts['inc'] = 5;  // list 5 records per page
+
+]]></programlisting>
+</example>
+
+</para>
+</sect2>
+
+<sect2 id="configuration.multiple-selections">
+<title id="configuration.multiple-selections.title">Multiple selections</title>
+<para>
+
+Specifies the number of lines to display on multiple selection filters.
+
+</para>
+<para>
+
+<example><title>Multiple selections option</title>
+<programlisting><![CDATA[
+$opts['multiple'] = '4'; // default is 4
+]]></programlisting>
+</example>
+
+</para>
+</sect2>
+
+<sect2 id="configuration.sort-field">
+<title id="configuration.sort-field.title">Sort field</title>
+<para>
+
+The field to sort on is initially defined as 'id' in the example below.
+Initially, this is set to the unique identifier or record ID column chosen
+earlier. In the example below, you would change 'id' to the name of the column
+that you'd prefer to sort on when the script is first loaded.
+
+</para>
+<para>
+
+<example><title>Sort field option</title>
+<programlisting><![CDATA[
+$opts['sort_field'] = 'id';
+]]></programlisting>
+</example>
+
+</para>
+</sect2>
+
+<sect2 id="configuration.navigation">
+<title id="configuration.navigation.title">Navigation</title>
+<para>
+
+The generated form will have various buttons (Next, Prev, Save, Cancel, etc.).
+Their location relative to the table can be changed.
+
+</para>
+<para>
+
+Button positions are U (up / above table) or D (down / below table is the
+default)
+
+</para>
+<para>
+
+- combined with -
+
+</para>
+<para>
+
+navigation style: B (buttons, default) or T (text links) or G (graphic links).
+
+</para>
+<para>
+
+Possible combinations include:
+
+</para>
+<para>
+
+<example><title>Navigation possibilities</title>
+<programlisting><![CDATA[
+$opts['navigation'] = 'DB'; // buttons below table
+$opts['navigation'] = 'DT'; // text links below table
+$opts['navigation'] = 'DG'; // graphics below table
+$opts['navigation'] = 'UB'; // buttons above table
+$opts['navigation'] = 'UT'; // text links above table
+$opts['navigation'] = 'UG'; // graphics above table
+]]></programlisting>
+</example>
+
+</para>
+</sect2>
+
+<sect2 id="configuration.page-elements">
+<title id="configuration.page-elements.title">Special page elements</title>
+<para>
+
+Display special page elements.
+
+</para>
+<para>
+
+<example><title>Special page elements</title>
+<programlisting><![CDATA[
+$opts['display'] = array(
+	'query' => false,
+	'sort'  => false,
+	'time'  => false
+);
+]]></programlisting>
+</example>
+
+</para>
+</sect2>
+
+<sect2 id="configuration.filters">
+<title id="configuration.filters.title">Filters</title>
+<para>
+
+Table-level filter capability (if set) is included in the WHERE clause of any
+generated SELECT statement. This gives you ability to work with a subset of data
+from table.
+
+</para>
+<para>
+
+<example><title>Filter examples</title>
+<programlisting><![CDATA[
+
+$opts['filters'] = 'column1 like '%11%' AND column2 < 17';
+
+$opts['filters'] = 'section_id = 9';
+
+$opts['filters'] = 'Table0.sessions_count > 200';
+
+]]></programlisting>
+</example>
+
+</para>
+</sect2>
+
+<sect2 id="configuration.triggers">
+<title id="configuration.triggers.title">Triggers</title>
+<para>
+
+Triggers are files that are included (via require) that perform
+actions (before or after) X (inserts, updates, or deletes).
+
+</para>
+<para>
+
+<itemizedlist>
+<listitem><para>
+
+'before' triggers are usually used to verify conditions prior to
+executing the main operation.
+
+</para></listitem>
+<listitem><para>
+
+'after' triggers are usually used to perform follow-on operations
+after the main operation.  For example, to update secondary tables
+to enforce referential integrity or to update aggregate tables.
+
+</para></listitem>
+</itemizedlist>
+
+</para>
+<para>
+
+The operation sequence is this:  before, main, after.  If any
+operation fails, not only should the next operation(s) not be
+executed, but the previous ones are 'rolled back' as if they
+never happened.  If a database is not able to do this, it is
+not 'transaction-safe'.
+
+</para>
+<para>
+
+Triggers are risky in basic MySQL as there is no native transaction support--it
+is not transaction-safe by default. There are transaction-safe table types in
+MySQL that can be conditionally built (see MySQL-Max), but &name; is currently
+not set up to support real transactions.  What that means is that if an
+operation fails, the database may be left in an intermediate and invalid state.
+
+</para>
+<para>
+
+The programmer must understand and accept these risks prior to using the &name;
+triggers mechanism. If the triggers are used, they execute within the namespace
+or scope of the &name; class.
+
+</para>
+<para>
+
+They _must_ return true or false to indicate success or failure.
+
+</para>
+<para>
+
+<example><title>Triggers ussage</title>
+<programlisting><![CDATA[
+$opts['triggers']['insert']['before']='categories.TIB.inc';
+$opts['triggers']['insert']['after'] ='categories.TIA.inc';
+$opts['triggers']['update']['before']='categories.TUB.inc';
+$opts['triggers']['update']['after'] ='categories.TUA.inc';
+$opts['triggers']['delete']['before']='categories.TDB.inc';
+$opts['triggers']['delete']['after'] ='categories.TDA.inc';
+]]></programlisting>
+</example>
+
+</para>
+</sect2>
+
+<sect2 id="configuration.logging">
+<title id="configuration.logging.title">Logging user actions</title>
+<para>
+
+You can log performed user actions into special "changelog" table.
+
+</para>
+<para>
+
+<example><title>Logging</title>
+<programlisting><![CDATA[
+$opts['logtable']= 'changelog';
+]]></programlisting>
+</example>
+
+<example><title>Log table schema</title>
+<programlisting><![CDATA[
+CREATE TABLE changelog (
+	updated timestamp(14) NOT NULL,
+	user varchar(50) default NULL,
+	host varchar(255) NOT NULL default '',
+	operation varchar(50) default NULL,
+	tab varchar(50) default NULL,
+	rowkey varchar(255) default NULL,
+	col varchar(255) default NULL,
+	oldval blob,
+	newval blob
+);
+]]></programlisting>
+</example>
+
+</para>
+</sect2>
+
+<sect2 id="configuration.languages">
+<title id="configuration.languages.title">Languages</title>
+<para>
+
+Get the user's default language and use it if possible or you can specify
+language particular one you want to use. Available languages are: DE EN-US EN FR
+IT NL PG SK SP.
+
+</para>
+<para>
+
+<example><title>Log table schema</title>
+<programlisting><![CDATA[
+$opts['language'] = $HTTP_SERVER_VARS['HTTP_ACCEPT_LANGUAGE']; // server language
+$opts['language'] = 'EN'; // english language
+$opts['language'] = 'SK'; // slovak language
+]]></programlisting>
+</example>
+
+</para>
+</sect2>
+
